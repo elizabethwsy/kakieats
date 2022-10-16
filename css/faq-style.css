@@ -1,0 +1,277 @@
+.landing-header {
+  font-family: 'Acme';
+  background: linear-gradient(90deg,
+      rgba(109, 8, 8, 0.2), 
+      rgba(0, 0, 0, .2)
+    ), url(https://res.klook.com/image/upload/fl_lossy.progressive/q_auto/f_auto/c_fill/blogen/2018/05/blog-cover-1.jpg);
+  background-color: #444;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: table;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.landing-text{
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+.landing-text h1{
+font-size: 450%;
+text-shadow: 1px 1px 8px #333;
+padding-bottom: .2em;
+} 
+
+.alert-dismissible{
+  padding-right: 0;
+}
+
+.faq-nav {
+  flex-direction: column;
+  margin: 0 0 32px;
+}
+.faq-nav .nav-link-faq {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 13px 16px;
+  background-color: #fff;
+  border: 0;
+  color: #616161;
+  transition: background-color 0.2s ease;
+}
+.faq-nav .nav-link-faq:hover {
+  background-color: #f6f6f6;
+  text-decoration: none;
+  border-right: 2px solid #ed2939;
+}
+.faq-nav .nav-link-faq.active {
+  background-color: #f6f6f6;
+  font-weight: 700;
+  color: #ed2939;
+  border-right: 2px solid #ed2939;
+}
+.faq-nav .nav-link-faq:last-of-type {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom: 0;
+}
+
+.tab-content {
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+.tab-content .card {
+  border-radius: 0;
+}
+.tab-content .card-header {
+  padding: 15px 16px;
+  border-radius: 0;
+  background-color: #f6f6f6;
+}
+.tab-content .card-header h5 {
+  margin: 0;
+}
+.tab-content .card-header h5 button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  font-weight: 700;
+  color: rgba(0, 0, 0, .87);
+  text-align: left;
+  white-space: normal;
+}
+.tab-content .card-header h5 button:hover, .tab-content .card-header h5 button:focus, .tab-content .card-header h5 button:active, .tab-content .card-header h5 button:hover:active {
+  text-decoration: none;
+}
+.tab-content .card-body p {
+  color: #616161;
+}
+.tab-content .card-body p:last-of-type {
+  margin: 0;
+}
+.accordion > .card:not(:first-child) {
+  border-top: 0;
+}
+.collapse.show .card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.form-control{
+  outline: none;
+  border: 1px solid #b2b2b2;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus{
+  border: 1px solid #ed2939;
+}
+
+.sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 4rem;
+}
+
+
+@media (max-width: 600px){
+  .landing-text h1{
+    font-size: 230%;
+  }
+}
+
+
+/********************CONTACT***********************/
+.padding {
+padding: 2.5rem 8rem;
+}
+.contact-form {
+  padding: 10%;
+  border:1px solid #dadee0;
+  
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.30);
+  background-color: white;
+}
+
+.contact{
+  background: linear-gradient(45deg,
+      rgba(75, 74, 72, 0.95), 
+      rgba(236, 27, 13, 0.7)
+    ), url('../images/contact-bg1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: table;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+    -webkit-background-size: 100%;
+  -moz-background-size: 100%; 
+  -o-background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  background-size: 120%;
+}
+.contact h1{
+  font-family: 'acme','san serif';
+  text-shadow: 1px 1px 5px #222;
+}
+
+.contact p{
+  font-size: .9rem;
+  text-shadow: 1px 1px 5px #222;
+}
+.contact-text {
+  color: white;
+  font-size: 130%;
+} 
+.row{
+  margin:0;
+}
+.send-btn{
+  border-radius: 0;
+  display: inline-block;
+  border-color: #222;
+  color: #fcfcfc;
+  background-color: #222;
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 0;
+}
+.send-btn:hover{
+ background-color: #ED2939;;
+  border-color: #ED2939;;
+  color: #fff;
+  font-weight: 700;
+}
+.guarantee ul{
+  list-style: none;
+  padding-left: 2rem;
+}
+.guarantee li{
+  padding-left: 1rem;
+  font-size: .9rem;
+}
+
+.guarantee li:before {
+  content: "✓ ";
+  padding-right:0.5rem;
+}
+.fa{
+  font-size: 20px;;
+}
+@media only screen and (max-width: 1120px) {
+.padding {
+padding: 2.5rem 5rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.padding {
+padding: 2.5rem 3rem;
+}
+  .contact{
+ background-attachment: inherit;
+ } 
+
+  .landing-text h3{
+  font-size: 180%;
+  font-weight: 400;
+  } 
+
+  .card-body{
+  padding: 2.5rem 2rem;
+  }
+  .card-body p{
+  font-size: 1rem;
+  }
+
+  .dropdown{
+  position: relative;
+
+  }
+}
+@media only screen and (max-width: 800px) {
+  p, li{
+    font-size: 1rem;
+  }
+  .padding {
+  padding: 2.5rem 2rem;
+  }
+
+  .card-body{
+  padding: 2rem;
+  }
+
+  .padding-bottom{
+    padding-bottom: 2rem;
+  }
+}
+
+/*PRIVACY*/
+
+.privacy h1,h3, h4{
+font-family:'acme','san serif';
+} 
+.privacy ul{
+    padding-left:2rem;
+}
+
+
+/*tnc*/
+.t-n-c h1{
+    font-family:'acme', 'sans-serif'
+}
+.t-n-c p{
+    text-align: justify;
+}

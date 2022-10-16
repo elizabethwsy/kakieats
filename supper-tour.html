@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Acme" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/styletour.css">
+
+</head>
+<body data-spy="scroll" data-target="#sidemenu" data-offset="15">
+
+
+	<nav class="sina-nav mobile-sidebar sticky-top" data-top="0">
+		<div class="container-fluid">
+
+
+			<div class="extension-nav">
+				<ul>
+					<li><a class="btn btn-secondary book-now" data-toggle="modal" data-target="#book-now">Book Now!</a></li>
+					<li class="dropdown">
+						<a href="#shop-menu" class="dropdown-toggle" id="shopping" >
+							<i class="fa fa-shopping-bag"></i>
+							<span class="shop-badge">2</span>
+						</a>
+						<ul class="dropdown-menu shop-menu">
+							<li>
+								<a href="" class="shop-item-photo">
+									<img src="images/chinatown-panel1.jpg" alt="chinatown-cultural-tour" />
+								</a>
+								<a href="#" class="shop-item-link"><strong>Chinatown Cultural Tour</strong></a>
+								<p class="shop-item-price">QTY:1 &nbsp; $100</p>
+							</li>
+							<li>
+								<a href="#" class="shop-item-photo">
+									<img src="images/supper-panel2.jpg" alt="supper-x-night-cycling" />
+								</a>
+								<a href="#" class="shop-item-link"><strong>Supper x Night Cycling</strong></a>
+								<p class="shop-item-price">QTY:2 &nbsp; $80</p>
+							</li>
+							<li class="shop-total-price">
+								<a href="#" class="btn btn-secondary shop-btn">Checkout</a>
+								<span>Total: $180.00</span>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- .extension-nav -->
+
+			<div class="sina-nav-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div><!-- .navbar-header -->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+            <li><h1 class="logo mt-2"><a tabindex="2" accesskey="1" href="index.html"><img src="images/kakiLogo.png" width="100" height="60" alt="Kaki Eats"></a> <span class="alt-logo">Kaki Eats</span></h1></li>
+              <li class="scroll"><a href="about.html">About</a></li>
+              <li class="dropdown menu-item-has-mega-menu">
+                <a href="#dropdown" class="dropdown-toggle">Tours</a>
+                <div class="scroll mega-menu dropdown-menu">
+                  <ul class="mega-menu-row" role="menu">
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Cultural Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="chinatown-tour.html">Chinatown Cultural Tour</a></li>
+                        <li><a href="littleindia-tour.html">Little India Cultural Tour</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Themed Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="michelin-tour.html">Michelin</a></li>
+                        <li><a href="supper-tour.html">Supper x Cycle</a></li>
+                        <li><a href="amazingrace-tour.html">Amazing Race</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Tour Types</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Solo Yolo</a></li>
+                        <li><a href="faq.html">Groups</a></li>
+                        <li><a href="custom-tour.html">Custom Tours</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">FAQs</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Why Join our Tours?</a></li>
+                        <li><a href="faq.html">What do I need to take note?</a></li>
+                      </ul>
+                    </li>
+                  </ul><!-- end row -->
+                </div>
+              </li>
+              <li class="scroll"><a href="faq.html">FAQ</a></li>
+              <li class="scroll"><a href="blog.html">Blog</a></li>
+              <li ><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+
+	<!-------------------------------------- NAVBAR END --------------------------------------------->
+
+
+
+	<div class="container">
+		<div class="modal fade" id="book-now" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="ModalLabel">Quick Booking </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<!-- Smart Wizard HTML -->
+						<div id="smartwizard">
+							<ul>
+								<li><a href="#step-1">Select a Tour<br /></a></li>
+								<li><a href="#step-2">Tour Details<br /></a></li>
+								<li><a href="#step-3">Contact Details<br /></a></li>
+							</ul>
+
+							<div>
+								<div id="step-1" class="">
+									<div class="blog-card">
+										<div class="meta">
+											<div class="photo" style="background-image: url(images/chinatown-panel1.jpg)"></div>
+										</div>
+										<div class="description">
+											<h1>Chinatown Cultural Tour</h1>
+											<p> Discover the vibrant history of the chinatown while eating your way through the streets.</p>
+
+											<p class="read-more">
+												<a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+											</p>
+										</div>
+									</div>
+									<div class="blog-card">
+										<div class="meta">
+											<div class="photo" style="background-image: url(images/little-india-panel.jpg)"></div>
+										</div>
+										<div class="description">
+											<h1>Little India Cultural Tour</h1>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+											<p class="read-more">
+												<a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+											</p>
+										</div>
+									</div>
+									<div class="blog-card">
+										<div class="meta">
+											<div class="photo" style="background-image: url(images/supper-panel2.jpg)"></div>
+										</div>
+										<div class="description">
+											<h1>Supper x Cycle</h1>
+											<p> Spice up your typical supper experience with night cycling!</p>
+											<p class="read-more">
+												<a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+											</p>
+										</div>
+									</div>
+									<div class="blog-card">
+										<div class="meta">
+											<div class="photo" style="background-image: url(images/michelin-panel.jpg)"></div>
+										</div>
+										<div class="description">
+											<h1>Michelin Stars</h1>
+											<p> This fabulous food tour gives you a taste of Singapore’s street food that are included in the world famous Michelin Guide.</p>
+											<p class="read-more">
+												<a class="btn btn-secondary book-now .sw-btn-next" data-toggle="modal" data-target="">Book Now!</a>
+											</p>
+										</div>
+									</div>
+									<div class="blog-card">
+										<div class="meta">
+											<div class="photo" style="background-image: url(images/AR-panel.jpg)"></div>
+										</div>
+										<div class="description">
+											<h1>Amazing Race</h1>
+											<p> Bring some healthy and delicious competition to your next event by treating your group of Kakis to the Amazing Race.</p>
+											<p class="read-more">
+												<a href="#" id="enquire">Enquire for price</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div id="step-2" class="">
+									<legend>Chinatown Cultural Tour</legend>
+									<div class="row">
+										<div class='form-group col-sm-6'>
+											<label for='tourdate'>Tour Date</label>
+											<input type= 'date' class='form-control' id='tourdate' placeholder="DD/MM/YYYY">
+										</div>
+										<div class='form-group col-sm-6'>
+											<label for='numberpeople'>No. of Pax</label>
+											<input type= 'number' class='form-control' id='inoutNumber' placeholder="2">
+											<small>Bring a friend along to enjoy up to <strong>10%*</strong> discount!</small>
+										</div>
+									</div>
+									<div class="row col-12 deets">
+										<div class="col-lg-3 col-md-3">
+											<p><i class="fas fa-clock"></i> &nbsp;Start <strong>12.00pm</strong></p>
+										</div>
+										<div class="col-lg-4 col-md-4 pr-0 pl-lg-4">
+											<p><i class="fas fa-hourglass-half"></i> &nbsp;Duration: <strong> 4h</strong> long</p>
+										</div>
+										<div class="col-lg-5 mb-3 col-md-5">
+											<p><i class="fas fa-map-marker-alt"></i> &nbsp;Meet at: <strong>Chinatown MRT Exit B</strong></p>
+										</div>
+									</div>
+									<div class="col-12 form-group pb-2">
+										<label for="inputNumber">Promo/ Gift Certificate Code</label>
+										<input type="name" class="form-control" id="inputNumber" required="required" placeholder="Code">
+									</div>
+									<div class="row col-12 discount">
+										<span><button type="button" class="btn btn-success "><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Double Kaki discount applied</button> </span>
+										<h3>&nbsp;&nbsp;&nbsp;&nbsp;$135</h3> &nbsp;&nbsp;<s>$150</s> &nbsp;for 2 pax
+									</div>
+								</div>
+								<div id="step-3" class="">
+									<form class="contact-form form">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="inputFirstName">First Name</label>
+												<input type="text" class="form-control" id="inputFirstName" required="required" placeholder="Name">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="inputLastName">Last Name</label>
+												<input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputEmail">Email</label>
+											<input type="email" class="form-control" id="inputEmail" required="required" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<label for="inputContact">Contact Number</label>
+											<input type="text" class="form-control" id="inputContact" required="required" placeholder="Contact Number">
+										</div>
+										<legend>Payment Details</legend>
+										<div class="form-group radio">
+											<label for="mastercard m-0">
+												<input type="radio" name="card" id="mastercard" value="1" checked="checked">
+												Mastercard
+											</label>
+											<label for="visa">
+												<input type="radio" name="card" id="visa" value="2">
+												Visa
+											</label>
+											<label for="amex">
+												<input type="radio" name="card" id="amex" value="2">
+												American Express
+											</label>
+										</div>
+										<div class="form-group">
+											<label for="inputNumber">Card Number</label>
+											<input type="name" class="form-control" id="inputNumber" required="required" placeholder="Card Number">
+										</div>
+										<div class="form-group">
+											<label for="inputNumber">Card Holder</label>
+											<input type="name" class="form-control" id="inputName" required="required" placeholder="Card Holder">
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-7">
+												<label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+												<input type="tel" class="form-control" placeholder="MM / YY" />
+											</div>
+											<div class="form-group col-md-5">
+												<label>CV CODE</label>
+												<input type="tel" class="form-control" placeholder="CVC" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="message">Any special requests?</label>
+											<textarea class="form-control" id="inputMessage" rows="3"placeholder="Message"></textarea>
+											<div class = 'agree'>
+												<input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'terms-and-conditions.html' target="_blank" id="enquire">Terms & Conditions</a><br>
+												<input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'privacy.html' target="_blank" >Privacy Policy</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------------------------------- NAVBAR END --------------------------------------------->
+
+
+	<!-- LANDING PAGE -->
+
+	<div class="home-landing" id="home" style="background-image:url('images/supper-bg.jpg')">
+		<div class="container landing-text-bg text-center col-12">
+			<h1>Supper X Cycle</h1><br>
+			<h2><small>Spice up your typical supper experience with night cycling</small></h2><br>
+			<strong>Grab your Kakis and ride with us today!</strong>
+		</div>
+		<div class="container-fluid pg-header__mask"><img src="images/footer-shape.png"></div>
+	</div>
+
+	<div id="summary" class="container-fluid container-body" >
+		<div class="row container">
+			<div class="col-12 ">
+				<h4 class="text-uppercase font-weight-bold pt-2 mb-1 ">Supper Tour</h4>
+			</div>
+		</div>
+		<div class="row container col-12 deets" >
+			<div class="col-lg-2 col-md-3 pr-0">
+				<p><i class="fas fa-coins"></i> <small> &nbsp;$</small><strong>60</strong><small>/adult</small></p>
+			</div>
+			<!-- Grid column -->
+			<div class="col-lg-3 col-md-3">
+				<p><i class="fas fa-clock"></i> <small> &nbsp;Start</small> <strong>10.00pm</strong></p>
+			</div>
+			<div class="col-lg-2 col-md-3">
+				<p><i class="fas fa-hourglass-half"></i> &nbsp;<strong> 4h</strong> <small>long</small></p>
+			</div>
+			<div class="col-lg-3 mb-3 col-md-3 pr-0">
+				<p><i class="fas fa-map-marker-alt"></i> &nbsp;Changi Beach Park</p>
+			</div>
+			<div class="col-lg-2 col-md-12">
+				<a class="btn btn-outline-primary" href="#" role="button">BOOK NOW </a>
+			</div>
+		</div>
+	</div>
+
+	<!--Timeline-->
+
+	<div class ="container-fluid">
+		<div class="timeline-highlight">
+			<H2>Highlights</H2>
+		</div>
+		<div class="timeline">
+			<div class="timeline-container">
+
+				<ol class="ps-timeline">
+
+					<li>
+						<div class="img-handler-top">
+						</div>
+						<div class="ps-bot">
+							<p>Ipoh Horfun</p>
+						</div>
+						<span class="img-wrap">
+							<img src="images/ipohhorfan.jpg" alt="" />
+						</span>
+					</li>
+					<li>
+						<div class="img-handler-bot">
+
+						</div>
+
+						<div class="ps-bot">
+							<p>White Bee Hoon</p>
+						</div>
+						<span><img src="images/whitebeehoon.jpg" alt="" /></span>
+					</li>
+					<li>
+						<div class="img-handler-top">
+						</div>
+
+						<div class="ps-bot">
+							<p>Rojak</p>
+						</div>
+						<span > <img src="images/rojak.jpg" alt="" /></span>
+					</li>
+					<li>
+						<div class="img-handler-bot">
+						</div>
+						<div class="ps-bot">
+							<p>Oyster Omelette</p>
+						</div>
+						<span> <img src="images/oyster-omelette.jpg" alt="no img" /></span>
+
+					</li>
+
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!--end of timeline-->
+
+
+	<!------------SIDE MENU-------------------->
+	<div class="container" id="content">
+		<div class="row">
+			<aside class="col-md-3 ">
+				<div class="mt-5 mb-3 sticky pt-2" id="sidemenu" >
+					<ul class="nav flex-md-column flex-row justify-content-between">
+						<li class="nav-item"><a href="#tour-deets" class="nav-link active pl-0">Tour Details</a></li>
+						<li class="nav-item"><a href="#tour-itinerary" class="nav-link pl-0">Itinerary</a></li>
+						<li class="nav-item"><a href="#expect" class="nav-link pl-0">What to Expect</a></li>
+						<li class="nav-item"><a href="#note" class="nav-link pl-0">Things to Note</a></li>
+						<li class="nav-item"><a href="#reviews" class="nav-link pl-0">Reviews</a></li>
+
+						<div class="card mt-3">
+							<div class="card-body text-center">
+								<h4 class="card-title"><strong>Solo Yolo</strong></h4>
+								<p class="card-text">Adults: $60</p>
+								<hr class="line">
+								<h4 class="card-title"><strong>Group</strong></h4>
+								<p class="card-text">Adults: $50</p>
+							</div>
+						</div>
+
+						<li class="nav-item pt-3"><a class="btn btn-outline-primary" href="#" role="button">Book NOW</a></li>
+					</ul>
+				</div>
+			</aside>
+			<main class="col py-2">
+				<div class="row">
+					<div class="col">
+						<div class="content pb-5 pt-2">
+							<h2 class="mb-4" id="tour-deets">Super Hop</h2>
+							<span class="anchor mb-3" ></span>
+							<h4 4 class="font-weight-bold pb-4 pt-1">Tour Details</h4>
+							<p>Cycle under the stars down the beautiful park connectors along East Coast Beach, only stopping for pedestrians and some of the best supper dishes in town.<br>
+								The best part? Indulge in a sumptuous supper without worrying about your waistline.<br>
+								Supper hop has never been better with night cycling. A breeze comes and goes, and the sights keep changing. You may even catch a sunrise or get to admire the underbelly of a plane as it flies by. Ride with us to supper spots near Bedok Food Centre and Changi Village Hawker Centre as we indulge in many local delights from hokkien mee to oyster omelettes. </p>
+
+								<p>
+									<strong>	Time: </strong>
+									10 am
+									<br>
+									<strong> Duration: </strong>
+									4 hours
+									<br>
+									<strong> Meeting point: </strong>
+									Changi Beach Park
+									View Map
+									<br>
+									<strong> Tour mode: </strong>
+									On Bike
+									<br>
+									<strong> Cost: </strong>
+									<i>Solo yolo:</i> $60 per person  &nbsp;
+									<i> Group: </i> $50 per person
+
+								</p>
+							</div>
+
+							<div class="content pb-5"id="tour-itinerary">
+
+								<span class="anchor" ></span>
+								<h4 class="font-weight-bold pt-1">Itinerary</h4>
+
+								<!--TIME LINE ITEM  -->
+								<div class="container pt-4 pb-5">
+									<div class="timeline-item"id="changibeach">
+										<h4><small>Changi Beach Park</small></h4>
+									</div>
+
+									<div class="timeline-item" id="pasirris">
+										<h4><small>PCN Pitstop Pasir Ris Town Park</small></h4>
+									</div>
+
+									<div class="timeline-item" id="bedokreservoir">
+										<h4><small>Bedok Reservoir Park</small></h4>
+									</div>
+
+
+									<div class="timeline-item" id="bedok85">
+										<h4><small>Bedok 85 (supper)</small></h4>
+									</div>
+
+									<div class="timeline-item" id="ecp">
+										<h4><small>East Coast Park</small></h4>
+									</div>
+
+									<div class="timeline-item" id="marinabarrage">
+										<h4><small>Marina Barrage</small></h4>
+									</div>
+
+								</div>
+
+								<div class="content pb-5"id="expect">
+									<span class="anchor" ></span>
+									<h4 class="font-weight-bold mb-3 pb-3 pt-1">What to Expect</h4>
+									<div class="row text-center">
+										<div class="col-sm-3 col-md-3 col-lg-3 p-2">
+											<span><img src="images/cutlery.png"></span>
+											<h6>  2-3 supper spots  </h6>
+										</div>
+
+										<div class="col-sm-3 col-md-3 col-lg-3 p-2">
+											<span><img src="images/run.png"></span>
+											<h6> 6-7 delicious samples which include Rojak, Oyster Omelette and many more </h6>
+										</div>
+
+										<div class="col-sm-3 col-md-3 col-lg-3 p-2">
+											<span><img src="images/support.png"></span>
+											<h6> Experienced, friendly and entertaining kaki guide </h6>
+										</div>
+
+										<div class="col-sm-3 col-md-3 col-lg-3 p-2">
+											<span><img src="images/bus.png"></span>
+											<h6> Fun & informative bike tour </h6>
+										</div>
+									</div>
+								</div>
+
+								<div class="content"id="note">
+									<span class="anchor"></span>
+									<h4 class="font-weight-bold pb-4 pt-1">Things to Note</h4>
+									<p>Confirmation ticket email<br>
+										Big appetite and huge smiles<br>
+										Total riding distance is about 15km on flat grounds (with lots of breaks in between) <br>
+										Sports attire is recommended with comfortable walking shoes<br>
+										More questions on our tours? Check out our FAQ or get in touch.
+									</p>
+								</div>
+
+								<div class="content"id="reviews">
+									<span class="anchor"></span>
+									<div class="container col-md-8 offset-md-2 col-10 offset-1 mt-5 pt-2">
+										<h2 class="text-center mt-2 mb-2 pb-2 text-uppercase text-dark"><strong>Reviews</strong></h2>
+
+										<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											</ol>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+												<span><i class="fa fa-angle-left" style="color:black;font-size:40px;" aria-hidden="true"></i></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+												<span><i class="fa fa-angle-right" style="color:black;font-size:40px;" aria-hidden="true"></i></span>
+												<span class="sr-only">Next</span>
+											</a>
+											<div class="carousel-inner mt-4">
+												<div class="carousel-item text-center active">
+													<h5 class="mt-4 mb-0"><strong class="text-danger text-uppercase">Mark Steven</strong></h5>
+													<h6 class="text-dark m-0">USA</h6>
+													<p class="m-0 pt-3">"Great way to see Singapore and taste the local supper delights. Friendly, funny and knowledgeable local guide Michael. Groups also small enough to be personal and made some nice Kakis along the way. Very safe, nice new clean bikes and booking was easy. Cheers!"</p>
+												</div>
+												<div class="carousel-item text-center">
+													<h5 class="mt-4 mb-0"><strong class="text-danger text-uppercase">Jun Jie</strong></h5>
+													<h6 class="text-dark m-0">Singapore</h6>
+													<p class="m-0 pt-3">"I had such an amazing time on this tour with my friends! Michael was such an excellent guide, sharing foodie and cycling tips along the way. A must go for any food or cycling enthusist."</p>
+												</div>
+												<div class="carousel-item text-center">
+													<h5 class="mt-4 mb-0"><strong class="text-danger text-uppercase">Alicia Wells</strong></h5>
+													<h6 class="text-dark m-0">USA</h6>
+													<p class="m-0 pt-3">"The best way to see the city with lots of back lanes. The ride is not strenuous. Michael is full of great information mixed with a sense of humor. The stop for supper was a treat. This tour is the number one thing to do while in Singapore."</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<div class="recommends container-fluid text-center p-5">
+			<h2> You may also like:</h2>
+			<div class="row">
+				<div class="col-sm-3 col-md-3">
+					<figure class="snip1571">
+						<img src="images/chinatown.jpg" alt="sample21" />
+						<h4>Chinatown Tour</h4>
+						<figcaption>
+							<p>Impressed by Hawker Chan's chicken rice? Explore the Chinatown area with us for more delicious food!</p>
+						</figcaption>
+						<a href="#"></a>
+					</figure>
+				</div>
+
+				<div class="col-sm-3 col-md-3">
+					<figure class="snip1571">
+						<img src="images/little-india.jpg" alt="sample21" />
+						<h4>Little India Tour</h4>
+						<figcaption>
+							<p>Impressed by Hawker Chan's chicken rice? Explore the Chinatown area with us for more delicious food!</p>
+						</figcaption>
+						<a href="#"></a>
+					</figure>
+				</div>
+
+				<div class="col-sm-3 col-md-3">
+					<figure class="snip1571">
+						<img src="images/changi.jpg" alt="sample21" />
+						<h4>Supper x Night Cycle </h4>
+						<figcaption>
+							<p>Interested in the cafe scene in Singapore? Join us for this too then!</p>
+						</figcaption>
+						<a href="#"></a>
+					</figure>
+				</div>
+
+				<div class="col-sm-3 col-md-3">
+					<figure class="snip1571">
+						<img src="images/red.jpg" alt="sample21" style="max-height:200px;"/>
+						<h4>Custom Tour</h4>
+						<figcaption>
+							<p>Interested in the cafe scene in Singapore? Join us for this too then!</p>
+						</figcaption>
+						<a href="#"></a>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+
+  <div class="footer-shape-bottom m-0 p-0"><img src="images/footer-shape.png"></div>
+
+		<!-- Container (Footer Section) -->
+		<footer class="page-footer small pt-4">
+			<div class="container text-center text-md-left">
+				<div class="row text-center text-md-left mt-3 ">
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Kaki Eats</h6>
+						<p>Be part of an ever-growing Kaki community and embark on a food adventure with us!
+						</p>
+						<!-- Social buttons -->
+						<div class="text-center text-md-left">
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item mr-0">
+									<a class="fa fa-facebook fa-lg white-text mr-md-4"> </a>
+								</li>
+								<li class="list-inline-item mr-0">
+									<a class="fa fa-instagram fa-lg white-text mr-md-4"></a>
+								</li>
+								<li class="list-inline-item mr-0">
+									<a class="fa fa-twitter fa-lg white-text mr-md-4"> </a>
+								</li>
+								<li class="list-inline-item mr-0">
+									<a class="fa fa-linkedin fa-lg white-text mr-md-4"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Grid column -->
+
+					<hr class="w-100 clearfix d-md-none">
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Sitemap</h6>
+						<ul class="list-unstyled">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="faq.html">FAQ</a>
+							</li>
+							<li>
+								<a href="blog/blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+
+					<hr class="w-100 clearfix d-md-none">
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Tours</h6>
+						<ul class="list-unstyled">
+							<li>
+								<a href="chinatown-tour.html">Chinatown Cultural Tour</a>
+							</li>
+							<li>
+								<a href="littleindia-tour.html">Little India Cultural Tour</a>
+							</li>
+							<li>
+								<a href="supper-tour.html">Supper x Night Cycling</a>
+							</li>
+							<li>
+								<a href="michelin-tour.html">Michelin Stars</a>
+							</li>
+							<li>
+								<a href="amazingrace-tour.html">Amazing Race</a>
+							</li>
+							<li>
+								<a href="custom-tour.html">Custom Tour</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Grid column -->
+					<hr class="w-100 clearfix d-md-none">
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+						<p>
+							<span>
+								<i class="fas fa-map-marker-alt"></i>
+							</span>
+							#12-08<br> &nbsp;&nbsp;&nbsp;&nbsp;
+							ONE Raffles Pace<br>&nbsp;&nbsp;&nbsp;&nbsp;
+							Singapore 005693
+						</p>
+						<p>
+							<span>
+								<i class="fas fa-phone"></i>
+							</span>
+							+65 6789 5467
+						</p>
+						<p>
+							<span>
+								<i class="far fa-envelope"></i>
+							</span>
+							<a href="mailto:hellokakieats@gmail.com">hellokakieats@gmail.com</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+				</div>
+				<!-- Footer links -->
+				<div class="row d-flex align-items-center">
+
+					<!-- Grid column -->
+					<div class="col-12">
+						<!--Copyright-->
+						<p class="text-center text-md-center copyright-kaki mt-5"> :copyright: 2018 Copyright :
+							<a href="index.html" class="mr-3">
+								Kaki Eats Pte Ltd
+							</a>
+							|
+							<a href="privacy.html" class="mx-3">
+								Privacy Policy
+							</a>
+							|
+							<a href="terms-n-conditions.html" class="mx-3">
+								Terms & Conditions
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/sina-nav.js"></script>
+  <script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+  </body>
+</html>

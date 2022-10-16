@@ -1,0 +1,644 @@
+
+
+/*-------------------------- CAROUSEL -------------------  */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption{
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+
+
+.carousel-caption p{
+  text-shadow: 2px 2px 6px rgba(0,0,0);
+  font-size: 120%;
+}
+.carousel-caption img{
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: .5rem;
+}
+
+.pg-header__bottom {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
+
+.overlay{
+ background: rgba(0,0,0,.3);
+}
+
+.pg-header__logos {
+  -js-display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  align-items: flex-end;
+
+}
+
+.pg-logos-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pg-logos-right ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.pg-logos-right span {
+  font-size: 15px;
+  display: block;
+  color: #fff;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+}
+
+.pg-logo-left {
+  text-align: left;
+}
+
+
+.pg-logo-left span {
+  font-size: 15px;
+  display: block;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+}
+
+
+
+
+
+@media (min-width: 992px){
+   .carousel-caption img{
+  max-width: 350px;
+}
+
+ .carousel-caption p{
+  font-size: 140%;
+  padding-top: 1rem;
+}
+
+}
+
+
+@media (min-width: 601px) and (max-width: 991px){
+  .pg-header__bottom {
+    bottom: 30px;
+  }
+
+   .pg-header__logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    padding-bottom: .5rem;
+  }
+
+
+  .pg-logos-right ul li {
+    display: inline-block;
+    padding: 0 12px;
+  }
+
+  .pg-logos-right span{
+    margin-bottom: 0;
+  }
+
+  #herworld{
+    display: none;
+  }
+
+  .carousel-caption img{
+  max-width: 300px;
+}
+
+
+
+}
+
+
+@media (max-width: 600px){
+  .pg-logos-right {
+    display: none;
+  }
+  .pg-logo-left {
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0,0,0,.6);
+  }
+
+  .carousel-caption{
+    top:50%;
+    width: auto;
+  }
+
+  .carousel-caption p{
+  font-size: 100%;
+}
+  .carousel-caption img{
+    width:70%;
+  }
+
+
+ .pg-header__logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-bottom: .5rem;
+  }
+}
+
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+
+/* -----------------------TOURS------------------ */
+
+h2{
+  font-family: Acme;
+}
+
+
+.foodtour h2{
+  padding: 30px 0px 10px;
+}
+.tour-description p{
+  margin-bottom: 0;
+  padding: 3px 40px 30px 40px;
+  color: white;
+}
+
+.tour-description a:hover {
+    text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+main section:hover {
+  flex: 2;
+}
+main section:hover:after {
+  opacity: 0.6;
+}
+main section .tour-title {
+  opacity: 1;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000;
+}
+
+main section:hover .tour-title {
+  color: #ED2939;
+  background-color: transparent;
+}
+
+
+
+main section:hover .tour-description{
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  background-color: transparent;
+  transform: translateY(0);
+  transition: opacity 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s, transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+  text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+
+section {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  min-height: 16vh;
+  overflow: hidden;
+  z-index: 1;
+  transition: flex-grow 0.2s, opacity 0.2s;
+}
+section:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: width 0.1s, -webkit-transform 0.1s;
+  transition: transform 0.2s, width 0.2s;
+  transition: transform 0.2s, width 0.2s, -webkit-transform 0.2s;
+}
+section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.1s;
+  
+}
+
+section:nth-child(2):before {
+  background: url(../images/chinatown-panel1.jpg);
+}
+
+
+section:nth-child(1):before {
+  background-image: url(../images/little-india-panel.jpg);
+  opacity: .8;
+}
+
+
+section:nth-child(3):before {
+  background-image: url(../images/supper-panel2.jpg);
+}
+
+
+
+section:nth-child(4):before {
+  background-image: url(../images/michelin-panel.jpg);
+}
+
+
+section:nth-child(5):before {
+  background-image: url(../images/AR-panel.jpg);
+}
+
+
+article {
+  position: relative;
+  padding:auto;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: white;
+  z-index: 1;
+  background-color: rgba(0,0,0,.4);
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 250px;
+  padding: 8px 0;
+  background-color: #ed2939;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+
+.ribbon-top-left span {
+  right: -25px;
+  top: 25px;
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+  }
+
+  section {
+    width: 20%;
+    height: 100vh;
+    /* margin-right: -1px; */
+  }
+  section:before {
+    left: -100%;
+    width: 400%;
+  }
+  .tour-description p{
+    margin-bottom: 0;
+    padding: 100px 40px 30px 40px;
+
+  }
+
+  .tour-description{
+    display: block;
+    top:42%;
+  }
+
+  .tour-title{
+    padding:10px;
+  }
+}
+
+@media (max-width: 767px){
+  .tour-description{
+    text-align: center;
+  }
+  .tour-description h2{
+    display: none;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* ------------------CUSTOM TOURS----------------- */
+.custom-tour{
+  display: inline-block;
+  padding:20px;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* -----------------------ALL TOURS INCLUDE------------------ */
+.tour-include h2{
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.tour-include i{
+  display: block;
+  font-size: 35px;
+  padding: 20px 0;
+}
+
+.tour-include img{
+  padding-bottom:20px;
+}
+
+
+/* -----------------------SALES------------------ */
+.promo-box img{
+  width: 100%;
+}
+
+#demo{
+  color: #ed2939;
+}
+
+@media (max-width: 600px){
+  .promotion h2{
+    font-size: 28px;
+    padding-bottom: .5rem !important;
+  }
+}
+
+
+/* -----------------------ABOUT US------------------ */
+.col-text {
+  height:30em;
+}
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aligner-item {
+  width: 70%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.aligner-item h2{
+  font-size: 3rem;
+}
+.col-image {
+  background-size: cover;
+  background-position:center center;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text{
+    padding: 2em 0em;
+  }
+
+  .col-text div p {
+    padding: 1.5em;
+  }
+  .aligner-item {
+    width: 90%;
+  }
+
+  .aligner-item h2{
+    padding-bottom: 0;
+  }
+}
+
+.div-shape-top{
+  padding: 0;
+  margin: 0;
+}
+
+.div-shape-top img{
+  width: 100%;
+  height: 90px;
+}
+/*----------------------FREE FOOD GUIDE---------------  */
+
+.mail-list img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    z-index: 200;
+}
+
+.mailing-list{
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.form-control{
+  border-radius: 0;
+}
+
+
+/*----------------------------PARTNERS---------------------  */
+.partner-logos{
+  background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.6), rgba(255, 255, 255, .6)),url(../images/partner-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: cover;
+  width: 100%;
+}
+
+.partner-logos img{
+  max-width: 13%;
+}
+
+.partner-logos h2{
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+/*-----------------------------INSTA ------------------*/
+.insta-img{
+  margin: 1rem;
+  padding:0.2rem 0;
+  width: 80%;
+
+}
+
+.flex-row{
+  max-width: 100vw;
+  justify-content: center;
+}
+.flex-column {
+  max-width : 20%;
+}
+
+.insta h6>a, .promotion h6> a{
+  text-decoration: none;
+  color: #222;
+}
+.insta h6>a:hover, .promotion h6> a:hover{
+  text-decoration: underline;
+  color: #ED2939;
+}
+
+
+
+/*-------------------------- COOKIES ----------------------*/
+  .cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    border-radius: 0;
+    background: #222 url("cubes.png");
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    color: #fff;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert-container a:hover {
+    text-decoration: underline;
+    color: #ED2939;
+}
+
+

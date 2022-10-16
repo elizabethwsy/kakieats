@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Acme" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/faq-style.css">
+  <link href="css/nav.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+   <!--------------------------------------NAVBAR BEGINS HERE --------------------------------------------->
+   <nav class="sina-nav mobile-sidebar sticky-top" data-top="0">
+      <div class="container-fluid">
+        <div class="extension-nav">
+          <ul>
+            <li><a class="btn btn-secondary book-now" data-toggle="modal" data-target="#book-now">Book Now!</a></li>
+            <li class="dropdown">
+              <a href="#shop-menu" class="dropdown-toggle" id="shopping" >
+                <i class="fa fa-shopping-bag"></i>
+                <span class="shop-badge">2</span>
+              </a>
+              <ul class="dropdown-menu shop-menu">
+                <li>
+                  <a href="" class="shop-item-photo">
+                    <img src="images/chinatown-panel1.jpg" alt="chinatown-cultural-tour" />
+                  </a>
+                  <a href="#" class="shop-item-link"><strong>Chinatown Cultural Tour</strong></a>
+                  <p class="shop-item-price">QTY:1 &nbsp; $100</p>
+                </li>
+                <li>
+                  <a href="#" class="shop-item-photo">
+                    <img src="images/supper-panel2.jpg" alt="supper-x-night-cycling" />
+                  </a>
+                  <a href="#" class="shop-item-link"><strong>Supper x Night Cycling</strong></a>
+                  <p class="shop-item-price">QTY:2 &nbsp; $80</p>
+                </li>
+                <li class="shop-total-price">
+                  <a href="#" class="btn btn-secondary shop-btn">Checkout</a>
+                  <span>Total: $180.00</span>
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div><!-- .extension-nav -->
+  
+        <div class="sina-nav-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div><!-- .navbar-header -->
+  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+            <li><h1 class="logo mt-2"><a tabindex="2" accesskey="1" href="index.html"><img src="images/kakiLogo.png" width="100" height="60" alt="Kaki Eats"></a> <span class="alt-logo">Kaki Eats</span></h1></li>
+              <li class="scroll"><a href="about.html">About</a></li>
+              <li class="dropdown menu-item-has-mega-menu">
+                <a href="#dropdown" class="dropdown-toggle">Tours</a>
+                <div class="scroll mega-menu dropdown-menu">
+                  <ul class="mega-menu-row" role="menu">
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Cultural Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="chinatown-tour.html">Chinatown Cultural Tour</a></li>
+                        <li><a href="littleindia-tour.html">Little India Cultural Tour</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Themed Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="michelin-tour.html">Michelin</a></li>
+                        <li><a href="supper-tour.html">Supper x Cycle</a></li>
+                        <li><a href="amazingrace-tour.html">Amazing Race</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Tour Types</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Solo Yolo</a></li>
+                        <li><a href="faq.html">Groups</a></li>
+                        <li><a href="custom-tour.html">Custom Tours</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">FAQs</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Why Join our Tours?</a></li>
+                        <li><a href="faq.html">What do I need to take note?</a></li>
+                      </ul>
+                    </li>
+                  </ul><!-- end row -->
+                </div>
+              </li>
+              <li class="scroll"><a href="faq.html">FAQ</a></li>
+              <li class="scroll"><a href="blog.html">Blog</a></li>
+              <li ><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+
+      
+  <div class="container">
+    <div class="modal fade" id="book-now" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Quick Booking </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <!-- Smart Wizard HTML -->
+          <div id="smartwizard">
+            <ul>
+                <li><a href="#step-1">Select a Tour<br /></a></li>
+                <li><a href="#step-2">Tour Details<br /></a></li>
+                <li><a href="#step-3">Contact Details<br /></a></li>
+            </ul>
+  
+            <div>
+              <div id="step-1" class="">
+                <div class="blog-card">
+                  <div class="meta">
+                    <div class="photo" style="background-image: url(images/chinatown-panel1.jpg)"></div>
+                  </div>
+                  <div class="description">
+                    <h1>Chinatown Cultural Tour</h1>
+                    <p> Discover the vibrant history of the chinatown while eating your way through the streets.</p>
+  
+                    <p class="read-more">
+                      <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="blog-card">
+                  <div class="meta">
+                    <div class="photo" style="background-image: url(images/little-india-panel.jpg)"></div>
+                  </div>
+                  <div class="description">
+                    <h1>Little India Cultural Tour</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                    <p class="read-more">
+                      <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="blog-card">
+                  <div class="meta">
+                    <div class="photo" style="background-image: url(images/supper-panel2.jpg)"></div>
+                  </div>
+                  <div class="description">
+                    <h1>Supper x Cycle</h1>
+                    <p> Spice up your typical supper experience with night cycling!</p>
+                    <p class="read-more">
+                      <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="blog-card">
+                  <div class="meta">
+                    <div class="photo" style="background-image: url(images/michelin-panel.jpg)"></div>
+                  </div>
+                  <div class="description">
+                    <h1>Michelin Stars</h1>
+                    <p> This fabulous food tour gives you a taste of Singapore�s street food that are included in the world famous Michelin Guide.</p>
+                    <p class="read-more">
+                      <a class="btn btn-secondary book-now .sw-btn-next" data-toggle="modal" data-target="">Book Now!</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="blog-card">
+                  <div class="meta">
+                    <div class="photo" style="background-image: url(images/AR-panel.jpg)"></div>
+                  </div>
+                  <div class="description">
+                    <h1>Amazing Race</h1>
+                    <p> Bring some healthy and delicious competition to your next event by treating your group of Kakis to the Amazing Race.</p>
+                    <p class="read-more">
+                      <a href="#" id="enquire">Enquire for price</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="step-2" class="">
+                <legend>Chinatown Cultural Tour</legend>
+                <div class="row">
+                  <div class='form-group col-sm-6'>
+                      <label for='tourdate'>Tour Date</label>
+                      <input type= 'date' class='form-control' id='tourdate' placeholder="DD/MM/YYYY">
+                  </div> 
+                  <div class='form-group col-sm-6'>
+                      <label for='numberpeople'>No. of Pax</label>
+                      <input type= 'number' class='form-control' id='inoutNumber' placeholder="2">
+                      <small>Bring a friend along to enjoy up to <strong>10%*</strong> discount!</small>
+                  </div> 
+                </div>
+                <div class="row col-12 deets">
+                  <div class="col-lg-3 col-md-3">
+                    <p><i class="fas fa-clock"></i> &nbsp;Start <strong>12.00pm</strong></p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 pr-0 pl-lg-4">
+                    <p><i class="fas fa-hourglass-half"></i> &nbsp;Duration: <strong> 4h</strong> long</p>
+                  </div>
+                  <div class="col-lg-5 mb-3 col-md-5">
+                    <p><i class="fas fa-map-marker-alt"></i> &nbsp;Meet at: <strong>Chinatown MRT Exit B</strong></p>
+                  </div>
+                </div>
+                <div class="col-12 form-group pb-2">
+                  <label for="inputNumber">Promo/ Gift Certificate Code</label>
+                  <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Code">
+                </div>  
+                <div class="row col-12 discount">
+                  <span><button type="button" class="btn btn-success "><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Double Kaki discount applied</button> </span>
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;$135</h3> &nbsp;&nbsp;<s>$150</s> &nbsp;for 2 pax
+                </div>
+              </div>
+              <div id="step-3" class="">
+                <form class="contact-form form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputFirstName">First Name</label>
+                      <input type="text" class="form-control" id="inputFirstName" required="required" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputLastName">Last Name</label>
+                      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" required="required" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputContact">Contact Number</label>
+                    <input type="text" class="form-control" id="inputContact" required="required" placeholder="Contact Number">
+                  </div>
+                  <legend>Payment Details</legend>
+                    <div class="form-group radio">
+                      <label for="mastercard m-0">
+                        <input type="radio" name="card" id="mastercard" value="1" checked="checked">
+                        Mastercard
+                      </label>
+                      <label for="visa">
+                        <input type="radio" name="card" id="visa" value="2">
+                        Visa
+                      </label>
+                      <label for="amex">
+                        <input type="radio" name="card" id="amex" value="2">
+                        American Express
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNumber">Card Number</label>
+                      <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Card Number">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputNumber">Card Holder</label>
+                      <input type="name" class="form-control" id="inputName" required="required" placeholder="Card Holder">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-7">
+                          <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                          <input type="tel" class="form-control" placeholder="MM / YY" />
+                      </div>
+                      <div class="form-group col-md-5">
+                          <label>CV CODE</label>
+                          <input type="tel" class="form-control" placeholder="CVC" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Any special requests?</label>
+                      <textarea class="form-control" id="inputMessage" rows="3"placeholder="Message"></textarea>
+                      <div class = 'agree'>
+                        <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'terms-and-conditions.html' target="_blank" id="enquire">Terms & Conditions</a><br>
+                        <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'privacy.html' target="_blank" >Privacy Policy</a>
+                      </div>         
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-------------------------------------- NAVBAR END --------------------------------------------->
+
+<div class="landing-header" id="home">
+  <div class="landing-text text-center">
+    <h1>Privacy Policy</h1>
+   
+    <div class="clear"></div>
+  </div>
+      <div class="container-fluid pg-header__mask"><img src="images/header-shape.png"></div>
+</div> 
+
+<div class="container p-5 privacy text-justify">
+<h1>Privacy Policy</h1>
+
+<p>Effective date: November 14, 2018</p>
+<p>Kaki Eats ("us", "we", or "our") operates the http://www.kakieats.com website (the "Service")</p>
+<p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. Our Privacy Policy  for Kaki Eats is managed through Third-party legal association.</p>
+<p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from http://www.kakieats.com</p>
+<br>
+<h2>Information Collection And Use</h2>
+<p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+<br>
+<h3>Types of Data Collected</h3>
+<br>
+<h4>Personal Data</h4>
+<p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
+<ul>
+<li>Email address</li><li>First name and last name</li><li>Phone number</li><li>Cookies and Usage Data</li>
+</ul>
+<br>
+<h4>Usage Data</h4>
+<p>We may also collect information how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+<br>
+<h4>Tracking & Cookies Data</h4>
+<p>We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</p>
+<p>Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.</p>
+<p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
+<p>Examples of Cookies we use:</p>
+<ul>
+    <li><strong>Session Cookies.</strong> We use Session Cookies to operate our Service.</li>
+    <li><strong>Preference Cookies.</strong> We use Preference Cookies to remember your preferences and various settings.</li>
+    <li><strong>Security Cookies.</strong> We use Security Cookies for security purposes.</li>
+</ul>
+<br>
+<h2>Use of Data</h2>   
+<p>Kaki Eats uses the collected data for various purposes:</p>    
+<ul>
+    <li>To provide and maintain the Service</li>
+    <li>To notify you about changes to our Service</li>
+    <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+    <li>To provide customer care and support</li>
+    <li>To provide analysis or valuable information so that we can improve the Service</li>
+    <li>To monitor the usage of the Service</li>
+    <li>To detect, prevent and address technical issues</li>
+</ul>
+<br>
+<h2>Transfer Of Data</h2>
+<p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
+<p>If you are located outside Singapore and choose to provide information to us, please note that we transfer the data, including Personal Data, to Singapore and process it there.</p>
+<p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
+<p>Kaki Eats will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
+<br>
+<h2>Disclosure Of Data</h2>
+<br>
+<h3>Legal Requirements</h3>
+<p>Kaki Eats may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+<ul>
+    <li>To comply with a legal obligation</li>
+    <li>To protect and defend the rights or property of Kaki Eats</li>
+    <li>To prevent or investigate possible wrongdoing in connection with the Service</li>
+    <li>To protect the personal safety of users of the Service or the public</li>
+    <li>To protect against legal liability</li>
+</ul>
+<br>
+<h2>Security Of Data</h2>
+<p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+<br>
+<h2>Service Providers</h2>
+<p>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
+<p>These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+<br>
+<h3>Analytics</h3>
+<p>We may use third-party Service Providers to monitor and analyze the use of our Service.</p>    
+<ul>
+        <li>
+        <p><strong>Google Analytics</strong></p>
+        <p>Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.</p>
+        <p>You can opt-out of having made your activity on the Service available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits activity.</p>                <p>For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: <a href="https://policies.google.com/privacy?hl=en">Google Policies</a></p>
+    </li>
+</ul>
+<br>
+<h2>Links To Other Sites</h2>
+<p>Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+<p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+<br>
+<h2>Children's Privacy</h2>
+<p>Our Service does not address anyone under the age of 18 ("Children").</p>
+<p>We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+<br>
+<h2>Changes To This Privacy Policy</h2>
+<p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+<p>We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy.</p>
+<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+<br>
+<h2>Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, please contact us:</p>
+<ul>
+        <li>By email: admin@kakieats.com</li>
+            <li>By visiting this page on our website: <a href="contact.html">Kaki Eats</a></li>
+      
+</ul>
+<br>
+</div>
+
+<div class="footer-shape-bottom m-0 p-0"><img src="images/footer-shape.png"></div>
+
+<!-- Container (Footer Section) -->
+<footer class="page-footer small pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left mt-3 ">
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Kaki Eats</h6>
+          <p>Be part of an ever-growing Kaki community and embark on a food adventure with us!
+          </p>
+          <!-- Social buttons -->
+          <div class="text-center text-md-left">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-facebook fa-lg white-text mr-md-4"> </a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-instagram fa-lg white-text mr-md-4"></a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-twitter fa-lg white-text mr-md-4"> </a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-linkedin fa-lg white-text mr-md-4"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Sitemap</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="blog/blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+            <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Tours</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="chinatown-tour.html">Chinatown Cultural Tour</a>
+            </li>
+            <li>
+              <a href="littleindia-tour.html">Little India Cultural Tour</a>
+            </li>
+            <li>
+              <a href="supper-tour.html">Supper x Night Cycling</a>
+            </li>
+            <li>
+              <a href="michelin-tour.html">Michelin Stars</a>
+            </li>
+            <li>
+              <a href="amazingrace-tour.html">Amazing Race</a>
+            </li>
+            <li>
+              <a href="custom-tour.html">Custom Tour</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            #12-08<br> &nbsp;&nbsp;&nbsp;&nbsp;
+            ONE Raffles Pace<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Singapore 005693
+          </p>
+          <p>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            +65 6789 5467
+          </p>
+          <p>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            <a href="mailto:hellokakieats@gmail.com">hellokakieats@gmail.com</a>
+          </p>
+        </div>
+            <!-- Grid column -->
+      </div>
+      <!-- Footer links -->
+      <div class="row d-flex align-items-center">
+  
+        <!-- Grid column -->
+        <div class="col-12">
+          <!--Copyright-->
+          <p class="text-center text-md-center copyright-kaki mt-5"> © 2018 Copyright :
+            <a href="index.html" class="mr-3">
+              Kaki Eats Pte Ltd
+            </a>
+            |
+            <a href="privacy.html" class="mx-3">
+              Privacy Policy
+            </a>
+            |
+            <a href="tnc.html" class="mx-3">
+              Terms & Conditions
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/sina-nav.js"></script>
+  <script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+  </body>
+</html>

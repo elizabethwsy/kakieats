@@ -1,0 +1,842 @@
+<!doctype html>
+<html>
+<head>
+  <title>Kaki Eats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Acme" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/faq-style.css">
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+  <body>
+
+    <!--------------------------------------NAVBAR BEGINS HERE --------------------------------------------->
+  <nav class="sina-nav mobile-sidebar sticky-top" data-top="0">
+    <div class="container-fluid">
+
+
+      <div class="extension-nav">
+        <ul>
+          <li><a class="btn btn-secondary book-now" data-toggle="modal" data-target="#book-now">Book Now!</a></li>
+          <li class="dropdown">
+            <a href="#shop-menu" class="dropdown-toggle" id="shopping" >
+              <i class="fa fa-shopping-bag"></i>
+              <span class="shop-badge">2</span>
+            </a>
+            <ul class="dropdown-menu shop-menu">
+              <li>
+                <a href="" class="shop-item-photo">
+                  <img src="images/chinatown-panel1.jpg" alt="chinatown-cultural-tour" />
+                </a>
+                <a href="#" class="shop-item-link"><strong>Chinatown Cultural Tour</strong></a>
+                <p class="shop-item-price">QTY:1 &nbsp; $100</p>
+              </li>
+              <li>
+                <a href="#" class="shop-item-photo">
+                  <img src="images/supper-panel2.jpg" alt="supper-x-night-cycling" />
+                </a>
+                <a href="#" class="shop-item-link"><strong>Supper x Night Cycling</strong></a>
+                <p class="shop-item-price">QTY:2 &nbsp; $80</p>
+              </li>
+              <li class="shop-total-price">
+                <a href="#" class="btn btn-secondary shop-btn">Checkout</a>
+                <span>Total: $180.00</span>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div><!-- .extension-nav -->
+
+      <div class="sina-nav-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div><!-- .navbar-header -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+            <li><h1 class="logo mt-2"><a tabindex="2" accesskey="1" href="index.html"><img src="images/kakiLogo.png" width="100" height="60" alt="Kaki Eats"></a> <span class="alt-logo">Kaki Eats</span></h1></li>
+              <li class="scroll"><a href="about.html">About</a></li>
+              <li class="dropdown menu-item-has-mega-menu">
+                <a href="#dropdown" class="dropdown-toggle">Tours</a>
+                <div class="scroll mega-menu dropdown-menu">
+                  <ul class="mega-menu-row" role="menu">
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Cultural Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="chinatown-tour.html">Chinatown Cultural Tour</a></li>
+                        <li><a href="littleindia-tour.html">Little India Cultural Tour</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Themed Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="michelin-tour.html">Michelin</a></li>
+                        <li><a href="supper-tour.html">Supper x Cycle</a></li>
+                        <li><a href="amazingrace-tour.html">Amazing Race</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Tour Types</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Solo Yolo</a></li>
+                        <li><a href="faq.html">Groups</a></li>
+                        <li><a href="custom-tour.html">Custom Tours</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">FAQs</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Why Join our Tours?</a></li>
+                        <li><a href="faq.html">What do I need to take note?</a></li>
+                      </ul>
+                    </li>
+                  </ul><!-- end row -->
+                </div>
+              </li>
+              <li class="scroll"><a href="faq.html">FAQ</a></li>
+              <li class="scroll"><a href="blog.html">Blog</a></li>
+              <li ><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+
+<div class="landing-header" id="home">
+  <div class="landing-text text-center">
+    <h1>Frequently Asked Questions</h1>
+    <h3></h3>
+    <div class="clear"></div>
+  </div>
+      <div class="container-fluid pg-header__mask"><img src="images/header-shape.png"></div>
+</div>   
+ 
+
+<div class="container pt-5 pb-5">
+    <div class="row">
+        <div class="col-lg-4 ">
+            <div class="nav nav-pills faq-nav sticky" id="faq-tabs" role="tablist" aria-orientation="vertical">
+                <a href="#tab1" class="nav-link-faq active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
+                    <strong>Frequently Asked Questions</strong>
+                </a>
+                <a href="#tab2" class="nav-link-faq" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
+                     Purchasing tickets
+                </a>
+                <a href="#tab3" class="nav-link-faq" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
+                    Food Tours
+                </a>
+                <a href="#tab4" class="nav-link-faq" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
+                    Dietary Restrictions
+                </a>
+                <a href="#tab5" class="nav-link-faq" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
+                  Children and wheelchair Accessibility
+                </a>
+                <a href="#tab6" class="nav-link-faq" data-toggle="pill" role="tab" aria-controls="tab6" aria-selected="false">
+                   Tour Logistics
+                </a>
+                <a href="#tab7" class="nav-link-faq" data-toggle="pill" role="tab" aria-controls="tab7" aria-selected="false">
+                   Others
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="tab-content" id="faq-tab-content">
+                <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+                    <div class="accordion" id="accordion-tab-1">
+                        <form role="search" method="get" action="#">
+          <div class="search-input">
+            <input type="search" class="form-control" placeholder="Type to search here" value="" name="">
+          </div>
+        </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
+                    <div class="accordion" id="accordion-tab-2">
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-2-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">If a food tour is sold out, can I join the waiting list?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+                                <div class="card-body">
+                                    <p>Sorry, we currently do not offer a waiting list. We may open additional departures as tours fill, so subscribe to our mailing list to receive additional updates on tour vacancies.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-2-heading-2">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">Is there a minimum number of guests that must be registered before a tour will run?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
+                                <div class="card-body">
+                                    <p>We will require a minimum of 2 guests to run a tour. In the event that we do not meet our minimum numbers, we will notify registered guests the day prior to the tour by email. A full refund will be offered to guests for cancelled tours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-2-heading-3">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">What is the cancellation policy? </button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
+                                <div class="card-body">
+                                    <p>No refund or rescheduling will be provided for cancellations made less than 72 hours in advance, or in case of no-show.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-2-heading-4">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">If I book multiple tours, do I get a discount?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
+                                <div class="card-body">
+                                    <p>Yes! After you purchase any tour, a pop up box with a 10% discount code will appear. This discount can be applied to your next purchase!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-2-heading-5">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-5" aria-expanded="false" aria-controls="accordion-tab-2-content-5">If I book a tour as a group, do I get a discount?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-2-content-5" aria-labelledby="accordion-tab-2-heading-6" data-parent="#accordion-tab-2">
+                                <div class="card-body">
+                                    <p>Definitely! The more the merrier. We do provide discounts for those who sign up with their kakis, up to 10% discount.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-2-heading-6">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-6" aria-expanded="false" aria-controls="accordion-tab-2-content-6">Can I book a private group tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-2-content-6" aria-labelledby="accordion-tab-2-heading-6" data-parent="#accordion-tab-2">
+                                <div class="card-body">
+                                    <p>Yes! Information on our Private Group Tours can be found <a href="#">here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
+                    <div class="accordion" id="accordion-tab-3">
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1" id="food-tour-what">What is a food tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>A food tour is a guided walking tour by one of our Kaki guides where you will taste samples at local street stalls and restaurants serving Singapore food. In addition, you will learn about the history and culture of Singapore as you walk in the neighbourhoods.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-2">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">How long is the tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-3-content-2" aria-labelledby="accordion-tab-3-heading-2" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>Our food tours usually last about 4 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-3">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">How much walking is involved?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>Most of our tours are walking tours so during much of the 4 hours, our customers will be standing or walking. The total distance covered is approximately 2 km. We will have seating arrangements provided at some of the tasting locations. There will also be at least 2 restroom breaks during the tour.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-4">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4">Does the tour end at the same place we meet?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-3-content-4" aria-labelledby="accordion-tab-3-heading-4" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>No. The tour ends at a different location from the starting point. Detailed directions to both the starting and ending points will be provided with the confirmation email after ticket purchase. All participants will receive a map with the tour route and directions to the closest MRT stations. Our Kaki guides would be more than happy to give you the directions after the tour.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-5">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-5" aria-expanded="false" aria-controls="accordion-tab-3-content-5">What happens in the event of bad weather?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-3-content-5" aria-labelledby="accordion-tab-3-heading-5" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>Tours are held rain or shine. We also provide ponchos in case of sudden weather changes and you do not have your own umbrella. We only cancel our tour in an unlikely event of extreme bad weather. In that case, we will try our best to reschedule your tour or refund.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-6">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-6" aria-expanded="false" aria-controls="accordion-tab-3-content-6">Are tours offered in other languages?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-3-content-6" aria-labelledby="accordion-tab-3-heading-6" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>Tours are only offered primarily in English at this time. We offer tours in mandarin as well but prior arrangements have to be made.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-3-heading-7">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-7" aria-expanded="false" aria-controls="accordion-tab-3-content-7">I am currently living in Singapore, can I take a food tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-3-content-7" aria-labelledby="accordion-tab-3-heading-7" data-parent="#accordion-tab-3">
+                                <div class="card-body">
+                                    <p>Definitely! We created some of our tours with you in mind. Locals join us all the time and have a blast! Amazing food, history, and expert tips - it’s great way to fall in love with your own city and make new friends too. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4">
+                    <div class="accordion" id="accordion-tab-4">
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-4-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">What if I have dietary restrictions or allergies?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+                                <div class="card-body">
+                                    <p>We offer vegetarian and pescetarian tastings on all Kaki Tours! All of our food and drink tastings are arranged in advance, so we ask that you note this in your online ticket purchase.</p>
+
+                                    <p>Unfortunately, we are unable to guarantee substitutions for other dietary restrictions such as: Gluten-Free, Dairy-Free, Vegan, and other food allergies. For these diets, the Little India Tour is your best option, but you may miss out on a number of tastings. The Michelin and Supper Tours are not recommended for these dietary restrictions and we will contact you to refund your purchase. </p>
+
+                                    <p>If you leave us a note in your online ticket purchase, we will order alternative tastings wherever possible. In all cases, our Kaki guides will inform the group of the ingredients in each dish and leave it to the final discretion of each guest to partake.</p>
+
+                                    <p>Please note, we cannot guarantee that cross-contamination may not occur due to the nature of our tasting locations. If you have severe food allergies, please contact us at <a href="mailto:hellokakieats@gmail.com" style="color: #ed2939;">hellokakieats@gmail.com </a>or <strong>6777 8311</strong> before purchasing tickets.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-4-heading-2">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">Are there vegetarian or gluten free options on the tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4">
+                                <div class="card-body">
+                                    <p>Yes! We offer vegetarian and pescetarian tastings on all Kaki Tours! All of our food and drink tastings are arranged in advance, so we ask that you note this in your online ticket purchase. </p>
+                                    <p>However, we apologise that none of our Kaki Tours are 100% gluten-free. The Chinatown Tour has the fewest tastings that contain gluten and has been reviewed as a great experience by other gluten-friendly guests. The Supper Tour and Little India Tour are not recommended gluten-free diets and we will contact you to refund your purchase. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5">
+                    <div class="accordion" id="accordion-tab-5">
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-5-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">What tours are best suited for children?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5">
+                                <div class="card-body">
+                                    <p>The Amazing Race is designed to be a fun event for the whole family. For children who have a limited attention span, this tour may not be appropriate for them. Parents, who know their children best, should assess the situation individually.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-5-heading-2">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2">If I am bringing a child, do I need to purchase a ticket for them?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-5-content-2" aria-labelledby="accordion-tab-5-heading-2" data-parent="#accordion-tab-5">
+                                <div class="card-body">
+                                    <p>Children 6 years old and under will not be eating do not require a ticket. However, please email us in advance to let us know that you’ll have a little one with you! Tickets are required for children over 6, regardless of whether they will be participating in tastings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-5-heading-3">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-3" aria-expanded="false" aria-controls="accordion-tab-5-content-3">Is the tour wheelchair and baby stroller accessible?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-5-content-3" aria-labelledby="accordion-tab-5-heading-3" data-parent="#accordion-tab-5">
+                                <div class="card-body">
+                                    <p>For the most part, the Chinatown Tour, Kampong Glam and Little India Tour can be catered to accommodate wheelchairs and baby strollers. If you have a mobility issue or plan on using a wheelchair or stroller and it prevents you from going up stairs, please email us after you complete your booking so that we are able to make special arrangements for you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-5-heading-4">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-4" aria-expanded="false" aria-controls="accordion-tab-5-content-4">Can I participate if I am pregnant?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-5-content-4" aria-labelledby="accordion-tab-5-heading-4" data-parent="#accordion-tab-5">
+                                <div class="card-body">
+                                    <p>Sure! We welcome everyone, pregnant or not. Please note that there will be a bit of walking and standing but we have seating arrangements available at some of our tasting locations. We will also do our best to accommodate your pace.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab6" role="tabpanel" aria-labelledby="tab6">
+                    <div class="accordion" id="accordion-tab-6">
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-6-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-1" aria-expanded="false" aria-controls="accordion-tab-6-content-1">What do I need to bring on the tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-6-content-1" aria-labelledby="accordion-tab-6-heading-1" data-parent="#accordion-tab-6">
+                                <div class="card-body">
+                                    <p>In addition to a big appetite, please bring along your <strong>confirmation email</strong>. In terms of clothing, we suggest you wear comfortable clothing and shoes. Singapore can be very hot, it is recommended that you wear sun protection, including sun block, sunglasses or a hat. We will provide a bottle of water for you at the first tasting location. There will also be drinks provided at some of our other tasting locations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-6-heading-2">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-2" aria-expanded="false" aria-controls="accordion-tab-6-content-2">Are Gratuities included?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-6-content-2" aria-labelledby="accordion-tab-6-heading-2" data-parent="#accordion-tab-6">
+                                <div class="card-body">
+                                    <p>No. Gratuities are not included in the ticket price. If you think our Kaki guides have done a great job, they would greatly appreciate any gratuities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-6-heading-3">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-3" aria-expanded="false" aria-controls="accordion-tab-6-content-3">Is there parking near the tour meeting point?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-6-content-3" aria-labelledby="accordion-tab-6-heading-3" data-parent="#accordion-tab-6">
+                                <div class="card-body">
+                                    <p>Yes, there is paid public parkades located near the meeting point of the Chinatown Tour and Little India Tour. Please do not park in metered parking spots as most have a limit of only two hours. There are free 3-hour parking spots at select locations within Chinatown.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="accordion-tab-6-heading-4">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-4" aria-expanded="false" aria-controls="accordion-tab-6-content-4">Can I shop during the tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-6-content-4" aria-labelledby="accordion-tab-6-heading-4" data-parent="#accordion-tab-6">
+                                <div class="card-body">
+                                    <p>We encourage our participants to shop after the tour. To ensure that you have the best tasting experience, we have worked with each of our eateries to provide freshly-made food and drinks. It is important that we stay on schedule and arrive on time at each of our six locations. We will provide a detailed map showing our route so that you could return to each of the tasting location at your leisure.</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="card">
+                            <div class="card-header" id="accordion-tab-6-heading-5">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-5" aria-expanded="false" aria-controls="accordion-tab-6-content-5">Can I bring my pets on the tour?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="accordion-tab-6-content-5" aria-labelledby="accordion-tab-6-heading-5" data-parent="#accordion-tab-6">
+                                <div class="card-body">
+                                    <p>Sorry…due to the various food establishments we visit, pets are not allowed on the tour.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab7" role="tabpanel" aria-labelledby="tab7">
+                    <div class="accordion" id="accordion-tab-7">
+                      <div class="card">
+                            <div class="card-header" id="accordion-tab-7-heading-1">
+                                <h5>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-7-content-1" aria-expanded="false" aria-controls="accordion-tab-7-content-1">What’s the  100% Money Back Guarantee?</button>
+                                </h5>
+                            </div>
+                            <div class="collapse show" id="accordion-tab-7-content-1" aria-labelledby="accordion-tab-7-heading-1" data-parent="#accordion-tab-7">
+                                <div class="card-body">
+                                    <p>If you join us on a Kaki Tour and you aren’t satisfied with your experience, let us know within 30 days and we’ll make things right with a full refund! This guarantee extends to bookings made directly through our website. Unfortunately, we are unable to refund transactions made via third-party sites like Expedia, TripAdvisor, Booking.com etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+
+      <!-- Modal -->
+      <div class="modal fade" id="book-now" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Quick Booking </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <!-- Smart Wizard HTML -->
+              <div id="smartwizard">
+                  <ul>
+                      <li><a href="#step-1">Select a Tour<br /></a></li>
+                      <li><a href="#step-2">Tour Details<br /></a></li>
+                      <li><a href="#step-3">Contact Details<br /></a></li>
+                  </ul>
+
+                  <div>
+                      <div id="step-1" class="">
+                            <div class="blog-card">
+                              <div class="meta">
+                                <div class="photo" style="background-image: url(images/chinatown-panel1.jpg)"></div>
+                              </div>
+                              <div class="description">
+                                <h1>Chinatown Cultural Tour</h1>
+                                <p> Discover the vibrant history of the chinatown while eating your way through the streets.</p>
+
+                                <p class="read-more">
+                                  <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="blog-card">
+                              <div class="meta">
+                                <div class="photo" style="background-image: url(images/little-india-panel.jpg)"></div>
+                              </div>
+                              <div class="description">
+                                <h1>Little India Cultural Tour</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                                <p class="read-more">
+                                  <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="blog-card">
+                              <div class="meta">
+                                <div class="photo" style="background-image: url(images/supper-panel2.jpg)"></div>
+                              </div>
+                              <div class="description">
+                                <h1>Supper x Cycle</h1>
+                                <p> Spice up your typical supper experience with night cycling!</p>
+                                <p class="read-more">
+                                  <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="blog-card">
+                              <div class="meta">
+                                <div class="photo" style="background-image: url(images/michelin-panel.jpg)"></div>
+                              </div>
+                              <div class="description">
+                                <h1>Michelin Stars</h1>
+                                <p> This fabulous food tour gives you a taste of Singapore’s street food that are included in the world famous Michelin Guide.</p>
+                                <p class="read-more">
+                                  <a class="btn btn-secondary book-now .sw-btn-next" data-toggle="modal" data-target="">Book Now!</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="blog-card">
+                              <div class="meta">
+                                <div class="photo" style="background-image: url(images/AR-panel.jpg)"></div>
+                              </div>
+                              <div class="description">
+                                <h1>Amazing Race</h1>
+                                <p> Bring some healthy and delicious competition to your next event by treating your group of Kakis to the Amazing Race.</p>
+                                <p class="read-more">
+                                  <a href="#" id="enquire">Enquire for price</a>
+                                </p>
+                              </div>
+                            </div>
+                      </div>
+                      <div id="step-2" class="">
+                          <legend>Chinatown Cultural Tour</legend>
+                          <div class="row">
+                            <div class='form-group col-sm-6'>
+                                <label for='tourdate'>Tour Date</label>
+                                <input type= 'date' class='form-control' id='tourdate' placeholder="DD/MM/YYYY">
+                            </div> 
+                            <div class='form-group col-sm-6'>
+                                <label for='numberpeople'>No. of Pax</label>
+                                <input type= 'number' class='form-control' id='inoutNumber' placeholder="2">
+                                <small>Bring a friend along to enjoy up to <strong>10%*</strong> discount!</small>
+                            </div> 
+                          </div>
+                          <div class="row col-12 deets">
+                            <div class="col-lg-3 col-md-3">
+                              <p><i class="fas fa-clock"></i> &nbsp;Start <strong>12.00pm</strong></p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 pr-0 pl-lg-4">
+                              <p><i class="fas fa-hourglass-half"></i> &nbsp;Duration: <strong> 4h</strong> long</p>
+                            </div>
+                            <div class="col-lg-5 mb-3 col-md-5">
+                              <p><i class="fas fa-map-marker-alt"></i> &nbsp;Meet at: <strong>Chinatown MRT Exit B</strong></p>
+                            </div>
+                          </div>
+                          <div class="col-12 form-group pb-2">
+                            <label for="inputNumber">Promo/ Gift Certificate Code</label>
+                            <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Code">
+                          </div>  
+                          <div class="row col-12 discount">
+                            <span><button type="button" class="btn btn-success "><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Double Kaki discount applied</button> </span>
+                            <h3>&nbsp;&nbsp;&nbsp;&nbsp;$135</h3> &nbsp;&nbsp;<s>$150</s> &nbsp;for 2 pax
+                          </div>
+                      </div>
+                      <div id="step-3" class="">
+                          <form class="contact-form form">
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputFirstName">First Name</label>
+                                <input type="text" class="form-control" id="inputFirstName" required="required" placeholder="Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputLastName">Last Name</label>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputEmail">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" required="required" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputContact">Contact Number</label>
+                              <input type="text" class="form-control" id="inputContact" required="required" placeholder="Contact Number">
+                            </div>
+                            <legend>Payment Details</legend>
+                              <div class="form-group radio">
+                                <label for="mastercard m-0">
+                                  <input type="radio" name="card" id="mastercard" value="1" checked="checked">
+                                  Mastercard
+                                </label>
+                                <label for="visa">
+                                  <input type="radio" name="card" id="visa" value="2">
+                                  Visa
+                                </label>
+                                <label for="amex">
+                                  <input type="radio" name="card" id="amex" value="2">
+                                  American Express
+                                </label>
+                                </div>
+                                  <div class="form-group">
+                                    <label for="inputNumber">Card Number</label>
+                                    <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Card Number">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="inputNumber">Card Holder</label>
+                                    <input type="name" class="form-control" id="inputName" required="required" placeholder="Card Holder">
+                                  </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-7">
+                                      <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                      <input type="tel" class="form-control" placeholder="MM / YY" />
+                                  </div>
+                                  <div class="form-group col-md-5">
+                                      <label>CV CODE</label>
+                                      <input type="tel" class="form-control" placeholder="CVC" />
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="message">Any special requests?</label>
+                                  <textarea class="form-control" id="inputMessage" rows="3"placeholder="Message"></textarea>
+                                  <div class = 'agree'>
+                                    <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'terms-and-conditions.html' target="_blank" id="enquire">Terms & Conditions</a><br>
+                                    <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'privacy.html' target="_blank" >Privacy Policy</a>
+                                  </div>         
+                                </div>
+                              </form>
+                            </div>
+                           
+                         </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+<div class="footer-shape-bottom m-0 p-0"><img src="images/footer-shape.png"></div>
+
+
+<!-- Container (Footer Section) -->
+<footer class="page-footer small pt-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left mt-3 ">
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Kaki Eats</h6>
+        <p>Be part of an ever-growing Kaki community and embark on a food adventure with us!
+        </p>
+        <!-- Social buttons -->
+        <div class="text-center text-md-left">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item mr-0">
+              <a class="fa fa-facebook fa-lg white-text mr-md-4"> </a>
+            </li>
+            <li class="list-inline-item mr-0">
+              <a class="fa fa-instagram fa-lg white-text mr-md-4"></a>
+            </li>
+            <li class="list-inline-item mr-0">
+              <a class="fa fa-twitter fa-lg white-text mr-md-4"> </a>
+            </li>
+            <li class="list-inline-item mr-0">
+              <a class="fa fa-linkedin fa-lg white-text mr-md-4"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Sitemap</h6>
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+
+          <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Tours</h6>
+        <ul class="list-unstyled">
+          <li>
+            <a href="chinatown-tour.html">Chinatown Cultural Tour</a>
+          </li>
+          <li>
+            <a href="littleindia-tour.html">Little India Cultural Tour</a>
+          </li>
+          <li>
+            <a href="supper-tour.html">Supper x Night Cycling</a>
+          </li>
+          <li>
+            <a href="michelin-tour.html">Michelin Stars</a>
+          </li>
+          <li>
+            <a href="amazingrace-tour.html">Amazing Race</a>
+          </li>
+          <li>
+            <a href="custom-tour.html">Custom Tour</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          #12-08<br> &nbsp;&nbsp;&nbsp;&nbsp;
+          ONE Raffles Pace<br>&nbsp;&nbsp;&nbsp;&nbsp;
+          Singapore 005693
+        </p>
+        <p>
+          <span>
+            <i class="fas fa-phone"></i>
+          </span>
+          +65 6789 5467
+        </p>
+        <p>
+          <span>
+            <i class="far fa-envelope"></i>
+          </span>
+          <a href="mailto:hellokakieats@gmail.com">hellokakieats@gmail.com</a>
+        </p>
+      </div>
+          <!-- Grid column -->
+    </div>
+    <!-- Footer links -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-12">
+        <!--Copyright-->
+        <p class="text-center text-md-center copyright-kaki mt-5"> © 2018 Copyright :
+          <a href="index.html" class="mr-3">
+            Kaki Eats Pte Ltd
+          </a>
+          |
+          <a href="privacy.html" class="mx-3">
+            Privacy Policy
+          </a>
+          |
+          <a href="terms-n-conditions.html" class="mx-3">
+            Terms & Conditions
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/sina-nav.js"></script>
+    <script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+  </body>
+  
+</html>

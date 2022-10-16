@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Acme" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/faq-style.css">
+  <link href="css/nav.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+ <!--------------------------------------NAVBAR BEGINS HERE --------------------------------------------->
+ <nav class="sina-nav mobile-sidebar sticky-top" data-top="0">
+    <div class="container-fluid">
+      <div class="extension-nav">
+        <ul>
+          <li><a class="btn btn-secondary book-now" data-toggle="modal" data-target="#book-now">Book Now!</a></li>
+          <li class="dropdown">
+            <a href="#shop-menu" class="dropdown-toggle" id="shopping" >
+              <i class="fa fa-shopping-bag"></i>
+              <span class="shop-badge">2</span>
+            </a>
+            <ul class="dropdown-menu shop-menu">
+              <li>
+                <a href="" class="shop-item-photo">
+                  <img src="images/chinatown-panel1.jpg" alt="chinatown-cultural-tour" />
+                </a>
+                <a href="#" class="shop-item-link"><strong>Chinatown Cultural Tour</strong></a>
+                <p class="shop-item-price">QTY:1 &nbsp; $100</p>
+              </li>
+              <li>
+                <a href="#" class="shop-item-photo">
+                  <img src="images/supper-panel2.jpg" alt="supper-x-night-cycling" />
+                </a>
+                <a href="#" class="shop-item-link"><strong>Supper x Night Cycling</strong></a>
+                <p class="shop-item-price">QTY:2 &nbsp; $80</p>
+              </li>
+              <li class="shop-total-price">
+                <a href="#" class="btn btn-secondary shop-btn">Checkout</a>
+                <span>Total: $180.00</span>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div><!-- .extension-nav -->
+
+      <div class="sina-nav-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div><!-- .navbar-header -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+          <li ><h1 class="logo mt-2"><a tabindex="2" accesskey="1" href="/"><img src="images/kakiLogo.png" width="100" height="60" alt="Kaki Eats"></a>
+            <span class="alt-logo">Kaki Eats</span></h1></li>
+          <li class="scroll"><a href="about.html">About</a></li>
+          <li class="dropdown menu-item-has-mega-menu">
+            <a href="#dropdown" class="dropdown-toggle">Tours</a>
+            <div class="scroll mega-menu dropdown-menu">
+              <ul class="mega-menu-row" role="menu">
+                <li class="mega-menu-col col-md-3">
+                  <h4 class="mega-menu-col-title">Cultural Tours</h4>
+                  <ul class="sub-menu">
+                    <li><a href="chinatown-tour.html">Chinatown Cultural Tour</a></li>
+                    <li><a href="littleindia-tour.html">Little India Cultural Tour</a></li>
+                  </ul>
+                </li>
+                <li class="mega-menu-col col-md-3">
+                  <h4 class="mega-menu-col-title">Themed Tours</h4>
+                  <ul class="sub-menu">
+                    <li><a href="michelin-tour.html">Michelin</a></li>
+                    <li><a href="supper-tour.html">Supper x Cycle</a></li>
+                    <li><a href="amazingrace-tour.html">Amazing Race</a></li>
+                  </ul>
+                </li>
+                <li class="mega-menu-col col-md-3">
+                  <h4 class="mega-menu-col-title">Tour Types</h4>
+                  <ul class="sub-menu">
+                    <li><a href="faq.html">Solo Yolo</a></li>
+                    <li><a href="faq.html">Groups</a></li>
+                    <li><a href="custom-tour.html">Custom Tours</a></li>
+                  </ul>
+                </li>
+                <li class="mega-menu-col col-md-3">
+                  <h4 class="mega-menu-col-title">FAQs</h4>
+                  <ul class="sub-menu">
+                    <li><a href="faq.html">Why Join our Tours?</a></li>
+                    <li><a href="faq.html">What do I need to take note?</a></li>
+                  </ul>
+                </li>
+              </ul><!-- end row -->
+            </div>
+          </li>
+          <li class="scroll"><a href="faq.html">FAQ</a></li>
+          <li class="scroll"><a href="blog.html">Blog</a></li>
+          <li ><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- .container -->
+  </nav>
+<div class="container">
+  <div class="modal fade" id="book-now" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Quick Booking </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <!-- Smart Wizard HTML -->
+        <div id="smartwizard">
+          <ul>
+              <li><a href="#step-1">Select a Tour<br /></a></li>
+              <li><a href="#step-2">Tour Details<br /></a></li>
+              <li><a href="#step-3">Contact Details<br /></a></li>
+          </ul>
+
+          <div>
+            <div id="step-1" class="">
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(images/chinatown-panel1.jpg)"></div>
+                </div>
+                <div class="description">
+                  <h1>Chinatown Cultural Tour</h1>
+                  <p> Discover the vibrant history of the chinatown while eating your way through the streets.</p>
+
+                  <p class="read-more">
+                    <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(images/little-india-panel.jpg)"></div>
+                </div>
+                <div class="description">
+                  <h1>Little India Cultural Tour</h1>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                  <p class="read-more">
+                    <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(images/supper-panel2.jpg)"></div>
+                </div>
+                <div class="description">
+                  <h1>Supper x Cycle</h1>
+                  <p> Spice up your typical supper experience with night cycling!</p>
+                  <p class="read-more">
+                    <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(images/michelin-panel.jpg)"></div>
+                </div>
+                <div class="description">
+                  <h1>Michelin Stars</h1>
+                  <p> This fabulous food tour gives you a taste of Singapore�s street food that are included in the world famous Michelin Guide.</p>
+                  <p class="read-more">
+                    <a class="btn btn-secondary book-now .sw-btn-next" data-toggle="modal" data-target="">Book Now!</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="meta">
+                  <div class="photo" style="background-image: url(images/AR-panel.jpg)"></div>
+                </div>
+                <div class="description">
+                  <h1>Amazing Race</h1>
+                  <p> Bring some healthy and delicious competition to your next event by treating your group of Kakis to the Amazing Race.</p>
+                  <p class="read-more">
+                    <a href="#" id="enquire">Enquire for price</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="step-2" class="">
+              <legend>Chinatown Cultural Tour</legend>
+              <div class="row">
+                <div class='form-group col-sm-6'>
+                    <label for='tourdate'>Tour Date</label>
+                    <input type= 'date' class='form-control' id='tourdate' placeholder="DD/MM/YYYY">
+                </div> 
+                <div class='form-group col-sm-6'>
+                    <label for='numberpeople'>No. of Pax</label>
+                    <input type= 'number' class='form-control' id='inoutNumber' placeholder="2">
+                    <small>Bring a friend along to enjoy up to <strong>10%*</strong> discount!</small>
+                </div> 
+              </div>
+              <div class="row col-12 deets">
+                <div class="col-lg-3 col-md-3">
+                  <p><i class="fas fa-clock"></i> &nbsp;Start <strong>12.00pm</strong></p>
+                </div>
+                <div class="col-lg-4 col-md-4 pr-0 pl-lg-4">
+                  <p><i class="fas fa-hourglass-half"></i> &nbsp;Duration: <strong> 4h</strong> long</p>
+                </div>
+                <div class="col-lg-5 mb-3 col-md-5">
+                  <p><i class="fas fa-map-marker-alt"></i> &nbsp;Meet at: <strong>Chinatown MRT Exit B</strong></p>
+                </div>
+              </div>
+              <div class="col-12 form-group pb-2">
+                <label for="inputNumber">Promo/ Gift Certificate Code</label>
+                <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Code">
+              </div>  
+              <div class="row col-12 discount">
+                <span><button type="button" class="btn btn-success "><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Double Kaki discount applied</button> </span>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;$135</h3> &nbsp;&nbsp;<s>$150</s> &nbsp;for 2 pax
+              </div>
+            </div>
+            <div id="step-3" class="">
+              <form class="contact-form form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputFirstName">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" required="required" placeholder="Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" required="required" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="inputContact">Contact Number</label>
+                  <input type="text" class="form-control" id="inputContact" required="required" placeholder="Contact Number">
+                </div>
+                <legend>Payment Details</legend>
+                  <div class="form-group radio">
+                    <label for="mastercard m-0">
+                      <input type="radio" name="card" id="mastercard" value="1" checked="checked">
+                      Mastercard
+                    </label>
+                    <label for="visa">
+                      <input type="radio" name="card" id="visa" value="2">
+                      Visa
+                    </label>
+                    <label for="amex">
+                      <input type="radio" name="card" id="amex" value="2">
+                      American Express
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputNumber">Card Number</label>
+                    <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Card Number">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputNumber">Card Holder</label>
+                    <input type="name" class="form-control" id="inputName" required="required" placeholder="Card Holder">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-7">
+                        <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                        <input type="tel" class="form-control" placeholder="MM / YY" />
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label>CV CODE</label>
+                        <input type="tel" class="form-control" placeholder="CVC" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Any special requests?</label>
+                    <textarea class="form-control" id="inputMessage" rows="3"placeholder="Message"></textarea>
+                    <div class = 'agree'>
+                      <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'terms-and-conditions.html' target="_blank" id="enquire">Terms & Conditions</a><br>
+                      <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'privacy.html' target="_blank" >Privacy Policy</a>
+                    </div>         
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-------------------------------------- NAVBAR END --------------------------------------------->
+<div class="landing-header" id="home">
+  <div class="landing-text text-center">
+    <h1>Terms & Conditions</h1>
+   
+    <div class="clear"></div>
+  </div>
+      <div class="container-fluid pg-header__mask"><img src="images/header-shape.png"></div>
+</div> 
+
+<div class="container p-5 t-n-c">
+<h1>Terms & Conditions</h1>
+
+<p>By purchasing tickets for and/or participating in the food tasting walking tours (“Tours”) offered by Kaki Eats(the “Company”), and in consideration for my being allowed to participate in the Tours, the receipt and sufficiency of which is hereby acknowledged, I, and if I am not yet 18 years old, my parent or legal guardian (individually and collectively referred to below in the first person singular) agree to be bound by each of the following provisions of this waiver, release of liability, indemnification, consent to medical attention and grant of rights (“Waiver”) :
+</p>
+<br>
+<h2>1. Voluntary Participation</h2>
+<p> I understand and confirm that my participation in the Tours is voluntary. I am in good health and suffer from no physical or mental condition that would make me especially susceptible to injury or disability while participating in the Tours.
+</p>
+<br>
+<h2>2. Comprehension of Risk</h2>
+<p>I fully comprehend and accept all of the risks associated with my participation in the Tours including, without limitation, injury or death resulting from exposure to unfavorable weather conditions, food sickness, allergic reactions, choking, and injuries arising from self-inflicted accidents or mishaps, other participants, motor vehicles, and pedestrians.  I understand that the Tours take place in public venues under conditions largely beyond Company’s control.
+</p>
+<br>
+<h2>3. Assumption of Risk</h2>
+<p> I assume all risks, known and unknown, foreseeable and unforeseeable, in any way connected with my participation in the Tours. I accept personal responsibility for any liability, injury, loss, or damage in any way connected with my participation in the Tours.
+</p>
+<br>
+<h2>4. Release of Liability; Limitation of Damages</h2>
+<p>I hereby forever and unconditionally release Company and its affiliated entities, parent companies, subsidiaries, present and former employees, owners, officers, members, managers, partners, contractors, insurers, shareholders, and directors (collectively “Released Entities”), from any and all claims, actions, damages, liabilities, losses, costs, and expenses (including, without limitation, attorney’s fees) for death, injury, loss or damage of property, (collectively “Claims”) in any way arising out of my participation in the Tours, including, without limitation, any and all Claims resulting from the negligence of the Released Entities. Company’s liability to me will be limited to actual damages arising from Released Entities’ gross negligence or willful misconduct in the performance of their duties and responsibilities hereunder; provided, however, under no circumstance shall my damages in connection with my participation in the Tours be greater than $400. Recovery of such amount shall be my sole and exclusive remedy. All liability arising out of my participation in the Tours is cumulative and not per incident. In no event shall Company be liable for any special, incidental, punitive, or consequential damages or other indirect damages, even if Company has been informed of the possibility thereof.</p>
+<br>
+<h2>5. Consent to Medical Treatment</h2>
+<p>I authorize Company to provide to me, through medical personnel of its choice, customary medical assistance, transportation, and emergency medical services. This consent does not impose a duty upon Company to provide such assistance, transportation, or services.
+</p>    
+<br>
+<h2>6. Severability</h2>
+<p>If any provision of this Waiver is for any reason declared to be invalid or unenforceable, the validity and enforceability of the remaining provisions will not be affected.  The invalid or unenforceable provision will be deemed modified to the extent necessary to render it valid and enforceable, and if no modification may render it valid and enforceable, this Waiver will be construed as if not containing such provision and the rights and obligations of the parties will be construed and enforced accordingly.</p>
+<br>
+<h2>7. Promotional Release</h2>
+<p>I hereby grant to Company the unrestricted right and permission to copyright and use photographic portraits,  pictures, video footage and/or audio recordings of my participation in the Tours,  in which I may be included intact or in part, including the negatives, prints, transparencies or digital information relevant to such portraits (the “Material”). Company has the right to reproduce, exhibit, distribute, broadcast, digitize, edit, or otherwise use the Material, by any method and in any media, whether now existing or later created, without restriction throughout the world, by incorporating the Material into its website, publications, catalogues, brochures, books, magazines,  or commercial, informational, educational, advertising, or promotional materials relating thereto (collectively, the “Works’). I agree that Company is and shall be the exclusive owner of all right, title, and interest, including copyright, in the Material and the Works. I further grant to Company an irrevocable, royalty-free, worldwide license to use my name, age, and hometown in connection with the Material and the Works.
+</p>
+<br>
+<h2>8. Cancellation Policy</h2>
+<p>No refund will be provided for cancellations made less than 72 hours in advance, or in case of no-show.
+</p>
+<br>
+<p>
+THIS IS A WAIVER AND RELEASE OF LIABILITY. I HAVE READ this entire document. I UNDERSTAND THAT I HAVE GIVEN UP SUBSTANTIAL RIGHTS BY Agreeing to its provisions.  By continuing to participate in the tours, I am indicating my voluntary agreement to the provisions of this WAIVER AND RELEASE OF LIABILITY. Participation in the tours by a person who is not yet 18 years old indicates that a parent or legal guardian has also read and consented to this waiver. 
+</p>
+
+
+
+ <div class="footer-shape-bottom m-0 p-0"><img src="images/footer-shape.png"></div>
+
+<!-- Container (Footer Section) -->
+<footer class="page-footer small pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left mt-3 ">
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Kaki Eats</h6>
+          <p>Be part of an ever-growing Kaki community and embark on a food adventure with us!
+          </p>
+          <!-- Social buttons -->
+          <div class="text-center text-md-left">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-facebook fa-lg white-text mr-md-4"> </a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-instagram fa-lg white-text mr-md-4"></a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-twitter fa-lg white-text mr-md-4"> </a>
+              </li>
+              <li class="list-inline-item mr-0">
+                <a class="fa fa-linkedin fa-lg white-text mr-md-4"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Sitemap</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="blog/blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+            <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Tours</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="chinatown-tour.html">Chinatown Cultural Tour</a>
+            </li>
+            <li>
+              <a href="littleindia-tour.html">Little India Cultural Tour</a>
+            </li>
+            <li>
+              <a href="supper-tour.html">Supper x Night Cycling</a>
+            </li>
+            <li>
+              <a href="michelin-tour.html">Michelin Stars</a>
+            </li>
+            <li>
+              <a href="amazingrace-tour.html">Amazing Race</a>
+            </li>
+            <li>
+              <a href="custom-tour.html">Custom Tour</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            #12-08<br> &nbsp;&nbsp;&nbsp;&nbsp;
+            ONE Raffles Pace<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Singapore 005693
+          </p>
+          <p>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            +65 6789 5467
+          </p>
+          <p>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            <a href="mailto:hellokakieats@gmail.com">hellokakieats@gmail.com</a>
+          </p>
+        </div>
+            <!-- Grid column -->
+      </div>
+      <!-- Footer links -->
+      <div class="row d-flex align-items-center">
+  
+        <!-- Grid column -->
+        <div class="col-12">
+          <!--Copyright-->
+          <p class="text-center text-md-center copyright-kaki mt-5"> © 2018 Copyright :
+            <a href="index.html" class="mr-3">
+              Kaki Eats Pte Ltd
+            </a>
+            |
+            <a href="privacy.html" class="mx-3">
+              Privacy Policy
+            </a>
+            |
+            <a href="tnc.html" class="mx-3">
+              Terms & Conditions
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/sina-nav.js"></script>
+  <script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+  </body>
+</html>

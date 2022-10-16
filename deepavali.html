@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Acme" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/blogpost.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css" >
+</head>
+
+<body class="postbody">
+
+    <!--------------------------------------NAVBAR BEGINS HERE --------------------------------------------->
+   <nav class="sina-nav mobile-sidebar sticky-top" data-top="0">
+        <div class="container-fluid">
+    
+    
+          <div class="extension-nav">
+            <ul>
+              <li><a class="btn btn-secondary book-now" data-toggle="modal" data-target="#book-now">Book Now!</a></li>
+              <li class="dropdown">
+                <a href="#shop-menu" class="dropdown-toggle" id="shopping" >
+                  <i class="fa fa-shopping-bag"></i>
+                  <span class="shop-badge">2</span>
+                </a>
+                <ul class="dropdown-menu shop-menu">
+                  <li>
+                    <a href="" class="shop-item-photo">
+                      <img src="images/chinatown-panel1.jpg" alt="chinatown-cultural-tour" />
+                    </a>
+                    <a href="#" class="shop-item-link"><strong>Chinatown Cultural Tour</strong></a>
+                    <p class="shop-item-price">QTY:1 &nbsp; $100</p>
+                  </li>
+                  <li>
+                    <a href="#" class="shop-item-photo">
+                      <img src="images/supper-panel2.jpg" alt="supper-x-night-cycling" />
+                    </a>
+                    <a href="#" class="shop-item-link"><strong>Supper x Night Cycling</strong></a>
+                    <p class="shop-item-price">QTY:2 &nbsp; $80</p>
+                  </li>
+                  <li class="shop-total-price">
+                    <a href="#" class="btn btn-secondary shop-btn">Checkout</a>
+                    <span>Total: $180.00</span>
+                  </li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div><!-- .extension-nav -->
+    
+          <div class="sina-nav-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div><!-- .navbar-header -->
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+            <li><h1 class="logo mt-2"><a tabindex="2" accesskey="1" href="index.html"><img src="images/kakiLogo.png" width="100" height="60" alt="Kaki Eats"></a> <span class="alt-logo">Kaki Eats</span></h1></li>
+              <li class="scroll"><a href="about.html">About</a></li>
+              <li class="dropdown menu-item-has-mega-menu">
+                <a href="#dropdown" class="dropdown-toggle">Tours</a>
+                <div class="scroll mega-menu dropdown-menu">
+                  <ul class="mega-menu-row" role="menu">
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Cultural Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="chinatown-tour.html">Chinatown Cultural Tour</a></li>
+                        <li><a href="littleindia-tour.html">Little India Cultural Tour</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Themed Tours</h4>
+                      <ul class="sub-menu">
+                        <li><a href="michelin-tour.html">Michelin</a></li>
+                        <li><a href="supper-tour.html">Supper x Cycle</a></li>
+                        <li><a href="amazingrace-tour.html">Amazing Race</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">Tour Types</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Solo Yolo</a></li>
+                        <li><a href="faq.html">Groups</a></li>
+                        <li><a href="custom-tour.html">Custom Tours</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-3">
+                      <h4 class="mega-menu-col-title">FAQs</h4>
+                      <ul class="sub-menu">
+                        <li><a href="faq.html">Why Join our Tours?</a></li>
+                        <li><a href="faq.html">What do I need to take note?</a></li>
+                      </ul>
+                    </li>
+                  </ul><!-- end row -->
+                </div>
+              </li>
+              <li class="scroll"><a href="faq.html">FAQ</a></li>
+              <li class="scroll"><a href="blog.html">Blog</a></li>
+              <li ><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+    
+    
+    
+    <div class="container">
+      <div class="modal fade" id="book-now" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Quick Booking </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+    
+            <!-- Smart Wizard HTML -->
+            <div id="smartwizard">
+              <ul>
+                  <li><a href="#step-1">Select a Tour<br /></a></li>
+                  <li><a href="#step-2">Tour Details<br /></a></li>
+                  <li><a href="#step-3">Contact Details<br /></a></li>
+              </ul>
+    
+              <div>
+                <div id="step-1" class="">
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo" style="background-image: url(images/chinatown-panel1.jpg)"></div>
+                    </div>
+                    <div class="description">
+                      <h1>Chinatown Cultural Tour</h1>
+                      <p> Discover the vibrant history of the chinatown while eating your way through the streets.</p>
+    
+                      <p class="read-more">
+                        <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo" style="background-image: url(images/little-india-panel.jpg)"></div>
+                    </div>
+                    <div class="description">
+                      <h1>Little India Cultural Tour</h1>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+                      <p class="read-more">
+                        <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo" style="background-image: url(images/supper-panel2.jpg)"></div>
+                    </div>
+                    <div class="description">
+                      <h1>Supper x Cycle</h1>
+                      <p> Spice up your typical supper experience with night cycling!</p>
+                      <p class="read-more">
+                        <a class="btn btn-secondary book-now" data-toggle="modal" data-target="">Book Now!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo" style="background-image: url(images/michelin-panel.jpg)"></div>
+                    </div>
+                    <div class="description">
+                      <h1>Michelin Stars</h1>
+                      <p> This fabulous food tour gives you a taste of Singapore�s street food that are included in the world famous Michelin Guide.</p>
+                      <p class="read-more">
+                        <a class="btn btn-secondary book-now .sw-btn-next" data-toggle="modal" data-target="">Book Now!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo" style="background-image: url(images/AR-panel.jpg)"></div>
+                    </div>
+                    <div class="description">
+                      <h1>Amazing Race</h1>
+                      <p> Bring some healthy and delicious competition to your next event by treating your group of Kakis to the Amazing Race.</p>
+                      <p class="read-more">
+                        <a href="#" id="enquire">Enquire for price</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="step-2" class="">
+                  <legend>Chinatown Cultural Tour</legend>
+                  <div class="row">
+                    <div class='form-group col-sm-6'>
+                        <label for='tourdate'>Tour Date</label>
+                        <input type= 'date' class='form-control' id='tourdate' placeholder="DD/MM/YYYY">
+                    </div> 
+                    <div class='form-group col-sm-6'>
+                        <label for='numberpeople'>No. of Pax</label>
+                        <input type= 'number' class='form-control' id='inoutNumber' placeholder="2">
+                        <small>Bring a friend along to enjoy up to <strong>10%*</strong> discount!</small>
+                    </div> 
+                  </div>
+                  <div class="row col-12 deets">
+                    <div class="col-lg-3 col-md-3">
+                      <p><i class="fas fa-clock"></i> &nbsp;Start <strong>12.00pm</strong></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pr-0 pl-lg-4">
+                      <p><i class="fas fa-hourglass-half"></i> &nbsp;Duration: <strong> 4h</strong> long</p>
+                    </div>
+                    <div class="col-lg-5 mb-3 col-md-5">
+                      <p><i class="fas fa-map-marker-alt"></i> &nbsp;Meet at: <strong>Chinatown MRT Exit B</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-12 form-group pb-2">
+                    <label for="inputNumber">Promo/ Gift Certificate Code</label>
+                    <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Code">
+                  </div>  
+                  <div class="row col-12 discount">
+                    <span><button type="button" class="btn btn-success "><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Double Kaki discount applied</button> </span>
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;$135</h3> &nbsp;&nbsp;<s>$150</s> &nbsp;for 2 pax
+                  </div>
+                </div>
+                <div id="step-3" class="">
+                  <form class="contact-form form">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" required="required" placeholder="Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="email" class="form-control" id="inputEmail" required="required" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputContact">Contact Number</label>
+                      <input type="text" class="form-control" id="inputContact" required="required" placeholder="Contact Number">
+                    </div>
+                    <legend>Payment Details</legend>
+                      <div class="form-group radio">
+                        <label for="mastercard m-0">
+                          <input type="radio" name="card" id="mastercard" value="1" checked="checked">
+                          Mastercard
+                        </label>
+                        <label for="visa">
+                          <input type="radio" name="card" id="visa" value="2">
+                          Visa
+                        </label>
+                        <label for="amex">
+                          <input type="radio" name="card" id="amex" value="2">
+                          American Express
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputNumber">Card Number</label>
+                        <input type="name" class="form-control" id="inputNumber" required="required" placeholder="Card Number">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputNumber">Card Holder</label>
+                        <input type="name" class="form-control" id="inputName" required="required" placeholder="Card Holder">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-7">
+                            <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                            <input type="tel" class="form-control" placeholder="MM / YY" />
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>CV CODE</label>
+                            <input type="tel" class="form-control" placeholder="CVC" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Any special requests?</label>
+                        <textarea class="form-control" id="inputMessage" rows="3"placeholder="Message"></textarea>
+                        <div class = 'agree'>
+                          <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'terms-and-conditions.html' target="_blank" id="enquire">Terms & Conditions</a><br>
+                          <input type = 'checkbox'>&nbsp&nbsp&nbspI agree with the <a href = 'privacy.html' target="_blank" >Privacy Policy</a>
+                        </div>         
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-------------------------------------- NAVBAR END --------------------------------------------->
+          <!-------------------------------------- MAIN --------------------------------------------->
+
+    <!--  Blog Start post-content Area -->
+    <section class="post-content-area single-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post row">
+                        <div class="col-lg-12">
+                            <div class="feature-img">
+                                <img class="img-fluid" src="images/blog-deepavali.jpg" alt="">
+                            </div>									
+                        </div>
+                        <div class="col-lg-3  col-md-3 meta-details">
+                            <ul class="tags">
+                                <li><a href="#">Food,</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Countdown</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                            </ul>
+                            <div class="user-details row">
+                                <p class="user-name col-lg-12 col-md-12 col-6">Sarah Lee<span class="fa fa-user-circle-o p10"></span></p>
+                                <p class="date col-lg-12 col-md-12 col-6">15 Oct, 2018<span class="fa fa-calendar p10"></span></p>
+                                <p class="view col-lg-12 col-md-12 col-6">800 Views<span class="fa fa-eye p10"></span></p>
+                                <p class="comments col-lg-12 col-md-12 col-6">01 Comments<span class="fa fa-commenting-o p10"></span></p>
+                                <ul class="social-links col-lg-12 col-md-12 col-6">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+                                </ul>																				
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <h3 class="blogtitle">Kaki Eats Deepavali Special</h3>
+       
+                            <p class="excert">
+                                    This Deepavali season, come revive your love for Indian food with Kaki Eats.
+
+                            </p>
+                    
+                            <p>
+                            
+                                    Indian cuisine is all about the flavors, spices and aromas that capture the country’s true taste. So, Indian food lovers, if you’re looking for the best mouth-watering dishes to try with your Kakis, you’ve come to the right place.
+                            </p>
+                            <p>
+                                
+                            </p>
+
+                            <p>
+                                    Whether, it is casual or fine indian food dining, you can count it on us to give you the best recommendations in town.
+                            </p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="quotes">
+                                <h5>Mr and Mrs Mohgan’s Super Crispy Roti Prata</h5>
+                                Address: 300-302 Joo Chiat Road, Singapore 429356
+                                <br>Opening Hours: 6:30am to 1:30pm, closed on Tues/Wed 3rd week of the month
+                                
+                                <img class="img-fluid foodimg" src="images/blog-prata.jpg" alt="">
+                                <p>
+                                        Mr Mohgan has been making prata for more than 30 years. He makes his own dough, cooks the curry and flips the prata all by himself. Moderately thick and pan fried till a beautiful brown, the pratas here are fresh and SUPER CRISPY. The dough is made daily before being pan-fried till a golden brown. The prata carries a buttery aroma, is wonderfully crisp on the outside, and fluffy inside. It’s not as oily as the prata(s) you get elsewhere. The prata tastes even more heavenly when you dip it into the special sambal chilli and curry.
+
+                                </p>
+                            </div>
+
+                            <div class="quotes">
+                                    <h5>Samy's Curry Restaurant</h5>
+                                    Address: 25 Dempsey Rd, S249670
+                                    <br>Opening Hours: Mon-Sun 11am to 3pm, 6pm tp 10pm.
+                                    <img class="img-fluid foodimg" src="images/fishhead.jpg" alt="">
+                                    <p> 
+                                        Samy's Curry Restaurant started in the 1950s. Some things have not changed, however. The food is still served on banana leaves. A briyani set, with rice, two vegetables, gravy and pappadums is $3.60 and diners choose the meats they want. One must-order dish is fishhead curry. This is Singapore in a claypot because it was thought up here, although there is a Bengali dish of fish head cooked together with rice.The Singapore version came about because a savvy South Indian chef wanted his food to appeal to more people and chose fish head, which is prized among the Chinese. The one at Samy's is particularly good, with fresh, meaty heads cooked in a piquant gravy.
+                                    </p>
+                            </div>
+
+                            <div class="quotes">
+                                    <h5>Tandoor</h5>
+                                    Address: 11 Cavenagh Rd, Singapore 229616
+                                    <br>Opening Hours: 12-230pm, 7-1030pm
+                                      <img class="img-fluid foodimg" src="images/tandoor.jpg" alt="">
+                                    <p>
+                           Samy's Curry Restaurant started in the 1950s. Some things have not changed, however. The food is still served on banana leaves. A briyani set, with rice, two vegetables, gravy and pappadums is $3.60 and diners choose the meats they want. One must-order dish is fishhead curry. This is Singapore in a claypot because it was thought up here, although there is a Bengali dish of fish head cooked together with rice.
+
+                                    </p>
+                            </div>
+
+
+                            <div class="row">
+                               
+                                <div class="col-lg-12 mt-30">
+                            
+                                   <p>
+                                    <br>So there you have it, 3 amazing Indian food places in Singapore. I wasn’t able to cover every type of Indian food though, so if you are up for more good eats this deepavali, join us on our Little India Cultural Tour for a more comprehensive food tasting session!
+
+                                   </p>
+
+                                   <img class="img-fluid foodimg" src="../images/deepavali-sale.png" alt="">
+                                    
+                                    
+                                </div>									
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation-area">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                <div class="thumb">
+                                    <a href="#"><img class="img-fluid" src="img/blog/prev.jpg" alt=""></a>
+                                </div>
+                                <div class="arrow">
+                                    <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
+                                </div>
+                                <div class="details">
+                                    <p>Prev Post</p>
+                                    <a href="countdown.html"><h4>Kaki Eats Countdown Party</h4></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                <div class="details">
+                                    <p>Next Post</p>
+                                    <a href="carrotcake.html"><h4>Carrot Cake Craze</h4></a>
+                                </div>
+                                <div class="arrow">
+                                    <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
+                                </div>
+                                <div class="thumb">
+                                    <a href="#"><img class="img-fluid" src="img/blog/next.jpg" alt=""></a>
+                                </div>										
+                            </div>									
+                        </div>
+                    </div>
+                    
+                    <div class="comments-area">
+                        <h4>02 Comments</h4>
+                        <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c1.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Michelle William</a></h5>
+                                            <p class="date">November 1, 2018 at 3:12 pm </p>
+                                            <p class="comment">
+                                                I'm interested in the little india food tour! How do I join?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="reply-btn">
+                                           <a href="" class="btn-reply text-uppercase">reply</a> 
+                                    </div>
+                                </div>
+                        </div>	
+                            <div class="comment-list left-padding">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c2.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Admin</a></h5>
+                                            <p class="date">November 1, 2018 at 3:15 pm</p>
+                                            <p class="comment">
+                                                Hi Michelle, just click the 'Book now' button and you will be guided through the booking process. After which, you will receive a confirmation ticket to your email.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="reply-btn">
+                                           <a href="" class="btn-reply text-uppercase">reply</a> 
+                                    </div>
+                                </div>
+                            </div>	
+                    </div>
+
+
+
+
+
+
+                    <div class="comment-form">
+                        <h4>Leave a Comment</h4>
+                        <form>
+                            <div class="form-group form-inline">
+                              <div class="form-group col-lg-6 col-md-12 name">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                              </div>
+                              <div class="form-group col-lg-6 col-md-12 email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                              </div>										
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                            </div>
+                            <a href="#" class="primary-btn text-uppercase">Post Comment</a>	
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 sidebar-widgets">
+                    <div class="widget-wrap">
+                        <div class="single-sidebar-widget search-widget">
+                            <form class="search-form" action="#">
+                                <input placeholder="Search Posts" name="search" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Posts'" >
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="single-sidebar-widget user-info-widget">
+                            <img src="images/writer2.jpg" alt="">
+                            <a href="#"><h4>Sarah Lee</h4></a>
+                            <p>
+                                Senior blog writer
+                            </p>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <p>
+                                Always on a hunt for the best meals. Packing 6 meals a day in a 5'1 body is definitely a skill.
+                            </p>
+                        </div>
+                        <div class="single-sidebar-widget popular-post-widget">
+                            <h4 class="popular-title">Popular Posts</h4>
+                            <div class="popular-post-list">
+                                <div class="single-post-list d-flex flex-row align-items-center">
+                                    <div class="details">
+                                        <a href="countdown.html"><h6>Kaki Eats Countdown Party</h6></a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="single-post-list d-flex flex-row align-items-center">
+                                    <div class="details">
+                                        <a href="halloween.html"><h6>Kaki Eats Halloween Party</h6></a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="single-post-list d-flex flex-row align-items-center">
+                                    <div class="details">
+                                        <a href="kopi.html"><h6>Best Kopi in Town</h6></a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="single-post-list d-flex flex-row align-items-center">
+                                    <div class="details">
+                                        <a href="carrotcake.html"><h6>Carrot Cake Craze</h6></a>
+                                        <p>02 Hours ago</p>
+                                    </div>
+                                </div>															
+                            </div>
+                        </div>
+
+                        <div class="single-sidebar-widget post-category-widget">
+                            <h4 class="category-title">Post Catgories</h4>
+                            <ul class="cat-list">
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p>Food</p>
+                                        <p>37</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p>Kaki</p>
+                                        <p>24</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p>Events</p>
+                                        <p>59</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p>Lifestyle</p>
+                                        <p>29</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p>Special</p>
+                                        <p>15</p>
+                                    </a>
+                                </li>											
+                            </ul>
+                        </div>	
+                        <div class="single-sidebar-widget newsletter-widget">
+                            <h4 class="newsletter-title">Newsletter</h4>
+                            <p>
+                                Love the content? Subscribe for constant updates of happenings.
+                            </p>
+                            <div class="form-group d-flex flex-row">
+                               <div class="col-autos">
+                                  <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    </div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" >
+                                  </div>
+                                </div>
+                                <a href="#" class="bbtns">Subscribe</a>
+                            </div>	
+                            <p class="text-bottom">
+                                A free food guide will be given too!
+                            </p>								
+                        </div>
+                        <div class="single-sidebar-widget tag-cloud-widget">
+                            <h4 class="tagcloud-title">Tag Clouds</h4>
+                            <ul>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Art</a></li>
+                                <li><a href="#">Adventure</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Adventure</a></li>
+                            </ul>
+                        </div>								
+                    </div>
+                </div>
+            </div>
+        </div>	
+    </section>
+    <!-- End post-content Area -->
+    
+  
+
+  <div style="clear:both;"><br><br><br></div>
+
+
+
+
+
+<div class="footer-shape-bottom m-0 p-0"><img src="images/footer-shape.png"></div>
+
+
+
+  <!-------------------------------------- FOOTER --------------------------------------------->
+  <!-- Container (Footer Section) -->
+  <footer class="page-footer small pt-4">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left mt-3 ">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Kaki Eats</h6>
+              <p>Be part of an ever-growing Kaki community and embark on a food adventure with us!
+              </p>
+              <!-- Social buttons -->
+              <div class="text-center text-md-left">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item mr-0">
+                    <a class="fa fa-facebook fa-lg white-text mr-md-4"> </a>
+                  </li>
+                  <li class="list-inline-item mr-0">
+                    <a class="fa fa-instagram fa-lg white-text mr-md-4"></a>
+                  </li>
+                  <li class="list-inline-item mr-0">
+                    <a class="fa fa-twitter fa-lg white-text mr-md-4"> </a>
+                  </li>
+                  <li class="list-inline-item mr-0">
+                    <a class="fa fa-linkedin fa-lg white-text mr-md-4"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Sitemap</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                  <a href="blog/blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+      
+            <hr class="w-100 clearfix d-md-none">
+      
+                <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 ">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Tours</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="chinatown-tour.html">Chinatown Cultural Tour</a>
+                </li>
+                <li>
+                  <a href="littleindia-tour.html">Little India Cultural Tour</a>
+                </li>
+                <li>
+                  <a href="supper-tour.html">Supper x Night Cycling</a>
+                </li>
+                <li>
+                  <a href="michelin-tour.html">Michelin Stars</a>
+                </li>
+                <li>
+                  <a href="amazingrace-tour.html">Amazing Race</a>
+                </li>
+                <li>
+                  <a href="custom-tour.html">Custom Tour</a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                #12-08<br> &nbsp;&nbsp;&nbsp;&nbsp;
+                ONE Raffles Pace<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                Singapore 005693
+              </p>
+              <p>
+                <span>
+                  <i class="fas fa-phone"></i>
+                </span>
+                +65 6789 5467
+              </p>
+              <p>
+                <span>
+                  <i class="far fa-envelope"></i>
+                </span>
+                <a href="mailto:hellokakieats@gmail.com">hellokakieats@gmail.com</a>
+              </p>
+            </div>
+                <!-- Grid column -->
+          </div>
+          <!-- Footer links -->
+          <div class="row d-flex align-items-center">
+      
+            <!-- Grid column -->
+            <div class="col-12">
+              <!--Copyright-->
+              <p class="text-center text-md-center copyright-kaki mt-5"> © 2018 Copyright :
+                <a href="index.html" class="mr-3">
+                  Kaki Eats Pte Ltd
+                </a>
+                |
+                <a href="privacy.html" class="mx-3">
+                  Privacy Policy
+                </a>
+                |
+                <a href="terms-n-conditions.html" class="mx-3">
+                  Terms & Conditions
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/sina-nav.js"></script>
+  <script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+  </body>
+</html>
+         
